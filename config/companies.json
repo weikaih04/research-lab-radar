@@ -1,0 +1,12 @@
+[
+  {"id":"nvidia","name":"NVIDIA","group":"Big Tech","jobs":null,"openalex_ids":["I4210127875"]},
+  {"id":"meta","name":"Meta","group":"Big Tech","jobs":null,"openalex_ids":["I4210114444"]},
+  {"id":"google","name":"Google / DeepMind","group":"Big Tech","jobs":null,"openalex_ids":["I1291425158","I4210090411"]},
+  {"id":"amazon","name":"Amazon","group":"Big Tech","jobs":null,"openalex_ids":["I1311688040"]},
+  {"id":"microsoft","name":"Microsoft","group":"Big Tech","jobs":null,"openalex_ids":["I1290206253"]},
+  {"id":"msr","name":"Microsoft Research","group":"Research Lab","jobs":null,"openalex_ids":["I4210164937","I4210113369","I4210124949"]},
+  {"id":"openai","name":"OpenAI","group":"AI Lab","jobs":{"type":"ashby","token":"openai"},"openalex_ids":["I4210161460"]},
+  {"id":"anthropic","name":"Anthropic","group":"AI Lab","jobs":{"type":"greenhouse","token":"anthropic"},"openalex_ids":["I4387930290"]},
+  {"id":"physical-intelligence","name":"Physical Intelligence","group":"Robotics","jobs":{"type":"ashby","token":"physicalintelligence"},"openalex_ids":[]},
+  {"id":"skild-ai","name":"Skild AI","group":"Robotics","jobs":{"type":"greenhouse","token":"skildai-careers"},"openalex_ids":[]}
+]

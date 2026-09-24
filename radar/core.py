@@ -1,0 +1,220 @@
+import datetime as dt
+import html
+import json
+import re
+import sqlite3
+import urllib.parse
+import urllib.request
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+CONFIG = ROOT / "config" / "companies.json"
+DB = ROOT / "state" / "radar.sqlite3"
+OUT = ROOT / "site" / "data.json"
+SNAPSHOT = ROOT / "state" / "snapshot.json"
+USER_AGENT = "ResearchLabRadar/0.1 (public research dashboard)"
+
+TOPICS = {
+    "Robotics": ["robot", "embodied", "manipulation", "humanoid", "motion planning", "actuation"],
+    "Language models": ["language model", "llm", "gpt", "transformer", "pretrain", "pre-train", "post-train", "reasoning"],
+    "Multimodal": ["multimodal", "vision-language", "video generation", "audio", "speech"],
+    "AI infrastructure": ["inference", "gpu", "distributed", "training infrastructure", "compute", "compiler"],
+    "Safety": ["alignment", "safety", "red team", "interpretability", "evals", "evaluation"],
+    "Agents": ["agent", "tool use", "computer use", "planning"],
+}
+RELEVANT = re.compile(r"research|scientist|machine learning|\bml\b|robot|language model|deep learning|computer vision|foundation model|inference|training|multimodal|alignment|\bai\b.*engineer|engineer.*\bai\b", re.I)
+IRRELEVANT = re.compile(r"recruit|sales|account executive|marketing|support|customer|operations|business development|deployment manager|product manager|program manager|demand planning|legal|finance|human resources|people partner|solutions architect|counsel|economist|policy research|user experience research|developer productivity|\bgtm\b", re.I)
+PAPER_RELEVANT = re.compile(r"artificial intelligence|machine learning|deep learning|language model|\bllm\b|robot|multimodal|computer vision|agentic|\bagent\b|reinforcement learning|neural network|generative ai|transformer|speech recognition|ai safety|alignment|interpretability|foundation model|diffusion model", re.I)
+
+
+def utc_now():
+    return dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
+
+
+def get_json(url):
+    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/json"})
+    with urllib.request.urlopen(req, timeout=30) as response:
+        return json.load(response)
+
+
+def companies():
+    return json.loads(CONFIG.read_text())
+
+
+def normalize_job(company, raw):
+    provider = company["jobs"]["type"]
+    if provider == "ashby":
+        title = raw.get("title") or ""
+        description = raw.get("descriptionPlain") or ""
+        result = {"id": str(raw["id"]), "title": title, "location": raw.get("location") or "", "url": raw.get("jobUrl") or "", "published_at": raw.get("publishedAt"), "description": description}
+    else:
+        title = raw.get("title") or ""
+        description = html.unescape(re.sub(r"<[^>]*>", " ", raw.get("content") or ""))
+        result = {"id": str(raw["id"]), "title": title, "location": (raw.get("location") or {}).get("name") or "", "url": raw.get("absolute_url") or "", "published_at": raw.get("first_published"), "description": description}
+    result["company_id"] = company["id"]
+    result["topics"] = classify(title)
+    result["relevant"] = bool(RELEVANT.search(title)) and not bool(IRRELEVANT.search(title))
+    return result
+
+
+def classify(text):
+    lower = text.lower()
+    return [topic for topic, keywords in TOPICS.items() if any(word in lower for word in keywords)]
+
+
+def fetch_jobs(company):
+    source = company["jobs"]
+    if source["type"] == "ashby":
+        url = "https://api.ashbyhq.com/posting-api/job-board/" + urllib.parse.quote(source["token"])
+    else:
+        url = "https://boards-api.greenhouse.io/v1/boards/" + urllib.parse.quote(source["token"]) + "/jobs?content=true"
+    data = get_json(url)
+    jobs = [normalize_job(company, item) for item in data["jobs"]]
+    if not jobs:
+        raise ValueError("Empty job response; keeping previous snapshot")
+    return jobs, url
+
+
+def connect(path=DB):
+    fresh = not path.exists()
+    path.parent.mkdir(parents=True, exist_ok=True)
+    db = sqlite3.connect(path)
+    db.row_factory = sqlite3.Row
+    db.executescript("""
+    CREATE TABLE IF NOT EXISTS jobs (
+      company_id TEXT NOT NULL, id TEXT NOT NULL, title TEXT NOT NULL,
+      location TEXT NOT NULL, url TEXT NOT NULL, published_at TEXT,
+      topics TEXT NOT NULL, relevant INTEGER NOT NULL, active INTEGER NOT NULL,
+      first_seen TEXT NOT NULL, last_seen TEXT NOT NULL,
+      PRIMARY KEY(company_id,id)
+    );
+    CREATE TABLE IF NOT EXISTS events (
+      id INTEGER PRIMARY KEY AUTOINCREMENT, company_id TEXT NOT NULL,
+      job_id TEXT NOT NULL, kind TEXT NOT NULL, title TEXT NOT NULL,
+      occurred_at TEXT NOT NULL
+    );
+    CREATE TABLE IF NOT EXISTS sources (
+      company_id TEXT NOT NULL, kind TEXT NOT NULL, status TEXT NOT NULL,
+      last_attempt TEXT, last_success TEXT, item_count INTEGER NOT NULL DEFAULT 0,
+      error TEXT, url TEXT,
+      PRIMARY KEY(company_id,kind)
+    );
+    CREATE TABLE IF NOT EXISTS papers (
+      id TEXT PRIMARY KEY, company_id TEXT NOT NULL, title TEXT NOT NULL,
+      publication_date TEXT, url TEXT NOT NULL, citations INTEGER NOT NULL,
+      first_seen TEXT NOT NULL
+    );
+    """)
+    if fresh and path == DB and SNAPSHOT.exists():
+        restore_state(db, SNAPSHOT)
+    return db
+
+
+def save_state(db, path=SNAPSHOT):
+    tables = ("jobs", "events", "sources", "papers")
+    state = {name:[dict(row) for row in db.execute(f"SELECT * FROM {name}")] for name in tables}
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(state, ensure_ascii=False, separators=(",", ":")))
+
+
+def restore_state(db, path=SNAPSHOT):
+    state = json.loads(path.read_text())
+    with db:
+        for table in ("jobs", "events", "sources", "papers"):
+            rows = state.get(table, [])
+            if not rows:
+                continue
+            columns = list(rows[0])
+            placeholders = ",".join("?" for _ in columns)
+            query = f"INSERT INTO {table} ({','.join(columns)}) VALUES ({placeholders})"
+            db.executemany(query, ([row.get(col) for col in columns] for row in rows))
+
+
+def apply_jobs(db, company, jobs, source_url, now=None):
+    now = now or utc_now()
+    cid = company["id"]
+    prev = db.execute("SELECT last_success FROM sources WHERE company_id=? AND kind='jobs'", (cid,)).fetchone()
+    baseline = prev is None or prev["last_success"] is None
+    seen = set()
+    with db:
+        for job in jobs:
+            jid = job["id"]
+            seen.add(jid)
+            old = db.execute("SELECT title,location,active FROM jobs WHERE company_id=? AND id=?", (cid,jid)).fetchone()
+            if old is None:
+                db.execute("INSERT INTO jobs VALUES (?,?,?,?,?,?,?,?,?,?,?)", (cid,jid,job["title"],job["location"],job["url"],job["published_at"],json.dumps(job["topics"]),int(job["relevant"]),1,now,now))
+                if not baseline:
+                    db.execute("INSERT INTO events(company_id,job_id,kind,title,occurred_at) VALUES (?,?,?,?,?)", (cid,jid,"new",job["title"],now))
+            else:
+                changed = old["title"] != job["title"] or old["location"] != job["location"]
+                kind = "reopened" if not old["active"] else ("changed" if changed else None)
+                db.execute("UPDATE jobs SET title=?,location=?,url=?,published_at=?,topics=?,relevant=?,active=1,last_seen=? WHERE company_id=? AND id=?", (job["title"],job["location"],job["url"],job["published_at"],json.dumps(job["topics"]),int(job["relevant"]),now,cid,jid))
+                if kind and not baseline:
+                    db.execute("INSERT INTO events(company_id,job_id,kind,title,occurred_at) VALUES (?,?,?,?,?)", (cid,jid,kind,job["title"],now))
+        active = db.execute("SELECT id,title FROM jobs WHERE company_id=? AND active=1", (cid,)).fetchall()
+        for old in active:
+            if old["id"] not in seen:
+                db.execute("UPDATE jobs SET active=0 WHERE company_id=? AND id=?", (cid,old["id"]))
+                if not baseline:
+                    db.execute("INSERT INTO events(company_id,job_id,kind,title,occurred_at) VALUES (?,?,?,?,?)", (cid,old["id"],"removed",old["title"],now))
+        db.execute("INSERT INTO sources(company_id,kind,status,last_attempt,last_success,item_count,error,url) VALUES (?,?,?,?,?,?,?,?) ON CONFLICT(company_id,kind) DO UPDATE SET status=excluded.status,last_attempt=excluded.last_attempt,last_success=excluded.last_success,item_count=excluded.item_count,error=NULL,url=excluded.url", (cid,"jobs","ok",now,now,len(jobs),None,source_url))
+    return {"count":len(jobs),"baseline":baseline}
+
+
+def mark_error(db, company_id, kind, error, now=None):
+    now = now or utc_now()
+    with db:
+        db.execute("INSERT INTO sources(company_id,kind,status,last_attempt,error) VALUES (?,?,?,?,?) ON CONFLICT(company_id,kind) DO UPDATE SET status='error',last_attempt=excluded.last_attempt,error=excluded.error", (company_id,kind,"error",now,str(error)[:300]))
+
+
+def fetch_papers(company, since_days=30):
+    ids = company["openalex_ids"]
+    if not ids:
+        return [], None
+    since = (dt.date.today() - dt.timedelta(days=since_days)).isoformat()
+    papers = []
+    for institution_id in ids:
+        params = {"filter":f"institutions.id:{institution_id},from_publication_date:{since},has_doi:true", "sort":"publication_date:desc", "per-page":"50", "select":"id,title,publication_date,doi,cited_by_count,type"}
+        url = "https://api.openalex.org/works?" + urllib.parse.urlencode(params)
+        for raw in get_json(url).get("results", []):
+            title = raw.get("title") or ""
+            doi = raw.get("doi") or ""
+            if (len(title) < 20 or len(title) > 250 or not doi or
+                raw.get("type") not in ("article","preprint","proceedings-article") or
+                "10.5281/zenodo" in doi.lower() or
+                not PAPER_RELEVANT.search(title) or
+                (raw.get("publication_date") or "9999") > dt.date.today().isoformat()):
+                continue
+            papers.append({"id":raw["id"], "company_id":company["id"], "title":title, "publication_date":raw.get("publication_date"), "url":doi, "citations":raw.get("cited_by_count") or 0})
+    return list({p["url"].lower():p for p in papers}.values()), "https://openalex.org/"
+
+
+def apply_papers(db, company, papers, source_url, now=None):
+    now = now or utc_now()
+    with db:
+        for p in papers:
+            db.execute("INSERT INTO papers(id,company_id,title,publication_date,url,citations,first_seen) VALUES (?,?,?,?,?,?,?) ON CONFLICT(id) DO UPDATE SET citations=excluded.citations", (p["id"],p["company_id"],p["title"],p["publication_date"],p["url"],p["citations"],now))
+        db.execute("INSERT INTO sources(company_id,kind,status,last_attempt,last_success,item_count,error,url) VALUES (?,?,?,?,?,?,?,?) ON CONFLICT(company_id,kind) DO UPDATE SET status=excluded.status,last_attempt=excluded.last_attempt,last_success=excluded.last_success,item_count=excluded.item_count,error=NULL,url=excluded.url", (company["id"],"papers","ok",now,now,len(papers),None,source_url))
+
+
+def export(db, out=OUT):
+    now = utc_now()
+    cfg = companies()
+    source_rows = db.execute("SELECT * FROM sources").fetchall()
+    sources = {(r["company_id"],r["kind"]):dict(r) for r in source_rows}
+    jobs = [dict(r) for r in db.execute("SELECT company_id,id,title,location,url,published_at,topics,relevant,first_seen FROM jobs WHERE active=1 AND relevant=1 ORDER BY published_at DESC,title LIMIT 1000")]
+    for j in jobs:
+        j["topics"] = json.loads(j["topics"])
+    events = [dict(r) for r in db.execute("SELECT e.company_id,e.job_id,e.kind,e.title,e.occurred_at FROM events e JOIN jobs j ON j.company_id=e.company_id AND j.id=e.job_id WHERE j.relevant=1 ORDER BY e.occurred_at DESC,e.id DESC LIMIT 250")]
+    papers = [dict(r) for r in db.execute("SELECT company_id,title,publication_date,url,citations,first_seen FROM papers ORDER BY publication_date DESC LIMIT 250")]
+    payload = {"generated_at":now,"method":"Public ATS APIs and OpenAlex; titles use rule-based topic tags. OpenAlex papers are candidates pending affiliation review.","companies":[],"jobs":jobs,"events":events,"papers":papers,"coverage":{"linkedin":"manual_search_only","x":"manual_search_only","llm":"not_configured"}}
+    for c in cfg:
+        cid = c["id"]
+        job_count = db.execute("SELECT COUNT(*) FROM jobs WHERE company_id=? AND active=1 AND relevant=1",(cid,)).fetchone()[0]
+        c = {k:v for k,v in c.items() if k not in ("openalex_ids",)}
+        c["relevant_jobs"] = job_count
+        c["sources"] = {kind:sources.get((cid,kind),{"status":"not_configured"}) for kind in ("jobs","papers")}
+        payload["companies"].append(c)
+    out.parent.mkdir(parents=True,exist_ok=True)
+    out.write_text(json.dumps(payload,ensure_ascii=False,indent=2))
+    return payload

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0c1722">
+  <title>Research Lab Radar · 科研动向</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="shell">
+    <aside class="rail">
+      <a class="brand" href="./"><span class="brand-mark">R<span>·</span></span><span>RESEARCH<br>LAB RADAR</span></a>
+      <div class="rail-label">WORKSPACE</div>
+      <nav aria-label="主要导航">
+        <button class="nav-link active" data-view="overview"><span>◫</span> 总览</button>
+        <button class="nav-link" data-view="jobs"><span>↗</span> 招聘信号</button>
+        <button class="nav-link" data-view="changes"><span>◷</span> 每日变化</button>
+        <button class="nav-link" data-view="papers"><span>▤</span> 论文候选</button>
+        <button class="nav-link" data-view="coverage"><span>◌</span> 数据覆盖</button>
+      </nav>
+      <div class="rail-bottom"><div class="live-dot"></div><span>Public source monitor</span></div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar"><div class="breadcrumb">INTELLIGENCE / <strong id="crumb">总览</strong></div><div class="top-actions"><span id="generated" class="muted">正在读取数据…</span><button id="refresh" class="icon-button" title="重新读取数据" aria-label="重新读取数据">↻</button></div></header>
+      <div class="content">
+        <div class="heading"><div><div class="eyebrow">RESEARCH INTELLIGENCE</div><h1>科研动向雷达<span class="period">.</span></h1><p>从公开职位和论文线索，观察研究方向的变化。每条信号都能回到原始来源。</p></div><div class="heading-tag">10 家机构 · 独立追踪</div></div>
+        <div id="notice" class="notice" hidden></div>
+
+        <section id="overview" class="view active">
+          <div class="stat-grid"><div class="stat"><div class="stat-label">AI / 机器人相关职位</div><div id="stat-jobs" class="stat-value">—</div><div class="stat-foot">标题规则筛选 · 已接入机构</div></div><div class="stat"><div class="stat-label">招聘源已接入</div><div id="stat-sources" class="stat-value">—</div><div class="stat-foot">仅统计实际成功更新</div></div><div class="stat"><div class="stat-label">近 7 天招聘变化</div><div id="stat-changes" class="stat-value">—</div><div class="stat-foot">基线之后的新/变更/下架</div></div><div class="stat"><div class="stat-label">论文候选</div><div id="stat-papers" class="stat-value">—</div><div class="stat-foot">OpenAlex · 需核实归属</div></div></div>
+          <div class="section-head"><div><div class="eyebrow">TRACKED ORGANIZATIONS</div><h2>观察名单</h2></div><span class="section-note">点击公司查看对应职位</span></div>
+          <div id="company-grid" class="company-grid"></div>
+          <div class="two-col"><section class="panel"><div class="panel-head"><div><div class="eyebrow">LATEST CHANGES</div><h3>最近变化</h3></div><button class="text-button" data-go="changes">查看全部 ↗</button></div><div id="recent-changes"></div></section><section class="panel"><div class="panel-head"><div><div class="eyebrow">METHODOLOGY</div><h3>读数须知</h3></div></div><div class="method"><div class="method-item"><span class="method-num">01</span><p>首次采集只建立基线。之后新出现、修改、重新上架或下架的职位才算变化。</p></div><div class="method-item"><span class="method-num">02</span><p>职位主题来自关键词规则；它描述招聘需求，不证明公司已经投入或即将发布某项产品。</p></div><div class="method-item"><span class="method-num">03</span><p>论文来自 OpenAlex 机构索引，展示为待核实候选；引用数会随时间变化。</p></div></div></section></div>
+        </section>
+
+        <section id="jobs" class="view"><div class="section-head first"><div><div class="eyebrow">HIRING SIGNALS</div><h2>AI / 机器人相关职位</h2></div><span class="section-note">仅公开招聘页 · 标题规则筛选</span></div><div class="filters"><select id="job-company" aria-label="公司筛选"><option value="">所有公司</option></select><select id="job-topic" aria-label="方向筛选"><option value="">所有方向</option></select><input id="job-search" type="search" placeholder="搜索职位、地点…" aria-label="搜索职位"></div><div id="job-count" class="result-count"></div><div id="job-list" class="list"></div></section>
+        <section id="changes" class="view"><div class="section-head first"><div><div class="eyebrow">DAILY DELTA</div><h2>每日变化</h2></div><span class="section-note">只记录成功采集后的真实变化</span></div><div id="change-list" class="list"></div></section>
+        <section id="papers" class="view"><div class="section-head first"><div><div class="eyebrow">PUBLICATION DISCOVERY</div><h2>论文候选</h2></div><span class="candidate-badge">待核实机构归属</span></div><p class="view-intro">由 OpenAlex 的机构关联检索。论文、日期和引用数可能受索引误差影响；点击 DOI 查看原文后再引用或下结论。</p><div id="paper-list" class="list"></div></section>
+        <section id="coverage" class="view"><div class="section-head first"><div><div class="eyebrow">SOURCE HEALTH</div><h2>数据覆盖</h2></div><span class="section-note">失败时保留上次成功快照</span></div><div id="coverage-list" class="coverage-list"></div><section class="panel source-panel"><div class="panel-head"><div><div class="eyebrow">ADDITIONAL CHANNELS</div><h3>LinkedIn、X 与分析层</h3></div></div><div class="channel-grid"><div><strong>LinkedIn</strong><span>手动实时搜索入口。未自动采集，也不统计人数或招聘增速。</span></div><div><strong>X / Twitter</strong><span>手动实时搜索入口。无 API 时明确不显示“今日更新”。</span></div><div><strong>语言模型</strong><span>暂未接入。当前方向标签由可检查的规则生成。</span></div></div></section></section>
+      </div>
+    </main>
+  </div>
+  <script src="./app.js" defer></script>
+</body>
+</html>

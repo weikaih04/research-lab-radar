@@ -1,0 +1,29 @@
+# Research Lab Radar
+
+Independent, source-linked dashboard for ten AI research organizations. It stores daily public hiring snapshots, emits changes only after a successful baseline, and displays paper *candidates* separately from verified hiring evidence.
+
+## Run
+
+Python 3.10+; no packages or API keys required.
+
+```sh
+python3 -m radar collect
+python3 -m http.server 8787 --directory site
+```
+
+Open `http://localhost:8787`. Run `python3 -m radar collect` daily. SQLite is a local cache. The tracked `state/snapshot.json` preserves baseline/history for stateless runs, and `site/data.json` is the deployable static dataset. GitHub Actions runs collection daily at 16:17 UTC and publishes the `site/` folder through GitHub Pages after each data commit.
+
+## Current coverage and limits
+
+- Jobs: public Ashby boards for OpenAI and Physical Intelligence; public Greenhouse boards for Anthropic and Skild AI. The six other rows are explicit `not_configured` until their official career sources are validated.
+- Papers: OpenAlex institution matches for eight organizations, looking back 30 days, DOI required. These are **candidates** because affiliation indexing and publication dates can be wrong. Physical Intelligence and Skild AI have no verified OpenAlex institution entry yet.
+- LinkedIn and X: manual live-search links only. There is no scraping or API ingestion and no claim of daily updates. An official X API connector can be added later with a monthly spend limit; it is intentionally off by default.
+- Topic tags: deterministic keyword rules on titles/descriptions, not LLM interpretation. Do not infer research strategy from one listing. First collection is a baseline and produces no “new job” events.
+
+## Data model
+
+`jobs` tracks active listings and first/last seen time. `events` records new, changed, reopened and removed listings after baseline. `sources` tracks last attempt, last success, failure and item count independently per company. Failed/empty responses preserve the last good snapshot. `papers` stores recent OpenAlex candidates and citation counts as reported at fetch time. The JSON snapshot is restored when a fresh runner has no SQLite cache.
+
+## Source and cost notes
+
+The four job boards and OpenAlex casual API access require no paid plan for this scale. LinkedIn job-search pages are provided for manual research because general search is not offered as a public LinkedIn API. X search links are manual; official API ingestion is a separate, paid decision.
