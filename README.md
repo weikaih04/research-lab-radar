@@ -2,6 +2,10 @@
 
 Independent, source-linked dashboard for ten AI research organizations. It stores daily public hiring snapshots, emits changes only after a successful baseline, and displays paper *candidates* separately from verified hiring evidence.
 
+Live page: https://weikaih04.github.io/research-lab-radar/
+
+Implementation phases and source strategy: [ROADMAP.md](ROADMAP.md).
+
 ## Run
 
 Python 3.10+; no packages or API keys required.
