@@ -6,6 +6,9 @@ import sqlite3
 import urllib.parse
 import urllib.request
 from pathlib import Path
+from .classify import classify_job
+from .google_careers import fetch_google_careers
+from .microsoft_careers import fetch_microsoft_careers, is_named_msr
 
 ROOT = Path(__file__).resolve().parents[1]
 CONFIG = ROOT / "config" / "companies.json"
@@ -14,16 +17,6 @@ OUT = ROOT / "site" / "data.json"
 SNAPSHOT = ROOT / "state" / "snapshot.json"
 USER_AGENT = "ResearchLabRadar/0.1 (public research dashboard)"
 
-TOPICS = {
-    "Robotics": ["robot", "embodied", "manipulation", "humanoid", "motion planning", "actuation"],
-    "Language models": ["language model", "llm", "gpt", "transformer", "pretrain", "pre-train", "post-train", "reasoning"],
-    "Multimodal": ["multimodal", "vision-language", "video generation", "audio", "speech"],
-    "AI infrastructure": ["inference", "gpu", "distributed", "training infrastructure", "compute", "compiler"],
-    "Safety": ["alignment", "safety", "red team", "interpretability", "evals", "evaluation"],
-    "Agents": ["agent", "tool use", "computer use", "planning"],
-}
-RELEVANT = re.compile(r"research|scientist|machine learning|\bml\b|robot|language model|deep learning|computer vision|foundation model|inference|training|multimodal|alignment|\bai\b.*engineer|engineer.*\bai\b", re.I)
-IRRELEVANT = re.compile(r"recruit|sales|account|channel manager|developer relation|marketing|support|customer|operations|business development|deployment manager|product manager|program manager|demand planning|legal|finance|human resources|people partner|solutions architect|counsel|economist|policy research|user experience research|developer productivity|\bgtm\b", re.I)
 PAPER_RELEVANT = re.compile(r"artificial intelligence|machine learning|deep learning|language model|\bllm\b|robot|multimodal|computer vision|agentic|\bagent\b|reinforcement learning|neural network|generative ai|transformer|speech recognition|ai safety|alignment|interpretability|foundation model|diffusion model", re.I)
 
 
@@ -58,23 +51,36 @@ def normalize_job(company, raw):
         title = raw.get("title") or ""
         description = raw.get("descriptionPlain") or ""
         result = {"id": str(raw["id"]), "title": title, "location": raw.get("location") or "", "url": raw.get("jobUrl") or "", "published_at": raw.get("publishedAt"), "description": description}
+    elif provider == "google_careers":
+        title = raw["title"]
+        result = {"id": str(raw["id"]), "title": title, "location": raw.get("location") or "", "url": raw["url"], "published_at": None, "description": "", "unit_hint": raw.get("organization") or ""}
+    elif provider == "microsoft_careers":
+        title = raw["title"]
+        result = {"id": str(raw["id"]), "title": title, "location": raw.get("location") or "", "url": raw["url"], "published_at": raw.get("published_at"), "description": "", "unit_hint": raw.get("department") or ""}
     else:
         title = raw.get("title") or ""
         description = html.unescape(re.sub(r"<[^>]*>", " ", raw.get("content") or ""))
         result = {"id": str(raw["id"]), "title": title, "location": (raw.get("location") or {}).get("name") or "", "url": raw.get("absolute_url") or "", "published_at": raw.get("first_published"), "description": description}
     result["company_id"] = company["id"]
-    result["topics"] = classify(title)
-    result["relevant"] = bool(RELEVANT.search(title)) and not bool(IRRELEVANT.search(title))
+    labels = classify_job(title)
+    result.update(labels)
+    result["relevant"] = labels["role_family"] != "other"
+    result.setdefault("unit_hint", "")
     return result
-
-
-def classify(text):
-    lower = text.lower()
-    return [topic for topic, keywords in TOPICS.items() if any(word in lower for word in keywords)]
 
 
 def fetch_jobs(company):
     source = company["jobs"]
+    if source["type"] == "google_careers":
+        raw, url = fetch_google_careers(source["query"])
+        return [normalize_job(company, item) for item in raw], url
+    if source["type"] == "microsoft_careers":
+        raw, url = fetch_microsoft_careers(source["query"])
+        subset = source["subset"]
+        raw = [item for item in raw if is_named_msr(item) == (subset == "msr")]
+        if not raw:
+            raise ValueError("Microsoft Careers returned no positions for this named subset")
+        return [normalize_job(company, item) for item in raw], url
     if source["type"] == "workday":
         endpoint = f"https://{source['host']}/wday/cxs/{source['tenant']}/{source['site']}/jobs"
         found = {}
@@ -117,6 +123,10 @@ def connect(path=DB):
       location TEXT NOT NULL, url TEXT NOT NULL, published_at TEXT,
       topics TEXT NOT NULL, relevant INTEGER NOT NULL, active INTEGER NOT NULL,
       first_seen TEXT NOT NULL, last_seen TEXT NOT NULL,
+      role_family TEXT NOT NULL DEFAULT 'other',
+      topic_evidence TEXT NOT NULL DEFAULT '{}',
+      unit_hint TEXT NOT NULL DEFAULT '',
+      missing_runs INTEGER NOT NULL DEFAULT 0,
       PRIMARY KEY(company_id,id)
     );
     CREATE TABLE IF NOT EXISTS events (
@@ -136,6 +146,15 @@ def connect(path=DB):
       first_seen TEXT NOT NULL
     );
     """)
+    columns = {row[1] for row in db.execute("PRAGMA table_info(jobs)")}
+    for name, definition in (
+        ("role_family", "TEXT NOT NULL DEFAULT 'other'"),
+        ("topic_evidence", "TEXT NOT NULL DEFAULT '{}'"),
+        ("unit_hint", "TEXT NOT NULL DEFAULT ''"),
+        ("missing_runs", "INTEGER NOT NULL DEFAULT 0"),
+    ):
+        if name not in columns:
+            db.execute(f"ALTER TABLE jobs ADD COLUMN {name} {definition}")
     if fresh and path == DB and SNAPSHOT.exists():
         restore_state(db, SNAPSHOT)
     return db
@@ -173,21 +192,34 @@ def apply_jobs(db, company, jobs, source_url, now=None):
             seen.add(jid)
             old = db.execute("SELECT title,location,active FROM jobs WHERE company_id=? AND id=?", (cid,jid)).fetchone()
             if old is None:
-                db.execute("INSERT INTO jobs VALUES (?,?,?,?,?,?,?,?,?,?,?)", (cid,jid,job["title"],job["location"],job["url"],job["published_at"],json.dumps(job["topics"]),int(job["relevant"]),1,now,now))
+                db.execute("""INSERT INTO jobs
+                  (company_id,id,title,location,url,published_at,topics,relevant,active,first_seen,last_seen,role_family,topic_evidence,unit_hint,missing_runs)
+                  VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,0)""",
+                  (cid,jid,job["title"],job["location"],job["url"],job["published_at"],
+                   json.dumps(job["topics"]),int(job["relevant"]),1,now,now,
+                   job.get("role_family","other"),json.dumps(job.get("topic_evidence",{})),job.get("unit_hint","")))
                 if not baseline:
                     db.execute("INSERT INTO events(company_id,job_id,kind,title,occurred_at) VALUES (?,?,?,?,?)", (cid,jid,"new",job["title"],now))
             else:
                 changed = old["title"] != job["title"] or old["location"] != job["location"]
                 kind = "reopened" if not old["active"] else ("changed" if changed else None)
-                db.execute("UPDATE jobs SET title=?,location=?,url=?,published_at=?,topics=?,relevant=?,active=1,last_seen=? WHERE company_id=? AND id=?", (job["title"],job["location"],job["url"],job["published_at"],json.dumps(job["topics"]),int(job["relevant"]),now,cid,jid))
+                db.execute("""UPDATE jobs SET title=?,location=?,url=?,published_at=?,topics=?,relevant=?,
+                  role_family=?,topic_evidence=?,unit_hint=?,active=1,last_seen=?,missing_runs=0
+                  WHERE company_id=? AND id=?""",
+                  (job["title"],job["location"],job["url"],job["published_at"],json.dumps(job["topics"]),
+                   int(job["relevant"]),job.get("role_family","other"),json.dumps(job.get("topic_evidence",{})),
+                   job.get("unit_hint",""),now,cid,jid))
                 if kind and not baseline:
                     db.execute("INSERT INTO events(company_id,job_id,kind,title,occurred_at) VALUES (?,?,?,?,?)", (cid,jid,kind,job["title"],now))
-        active = db.execute("SELECT id,title FROM jobs WHERE company_id=? AND active=1", (cid,)).fetchall()
+        active = db.execute("SELECT id,title,missing_runs FROM jobs WHERE company_id=? AND active=1", (cid,)).fetchall()
         for old in active:
             if old["id"] not in seen:
-                db.execute("UPDATE jobs SET active=0 WHERE company_id=? AND id=?", (cid,old["id"]))
-                if not baseline:
-                    db.execute("INSERT INTO events(company_id,job_id,kind,title,occurred_at) VALUES (?,?,?,?,?)", (cid,old["id"],"removed",old["title"],now))
+                missing_runs = old["missing_runs"] + 1
+                db.execute("UPDATE jobs SET missing_runs=? WHERE company_id=? AND id=?", (missing_runs,cid,old["id"]))
+                if missing_runs >= 2:
+                    db.execute("UPDATE jobs SET active=0 WHERE company_id=? AND id=?", (cid,old["id"]))
+                    if not baseline:
+                        db.execute("INSERT INTO events(company_id,job_id,kind,title,occurred_at) VALUES (?,?,?,?,?)", (cid,old["id"],"removed",old["title"],now))
         db.execute("INSERT INTO sources(company_id,kind,status,last_attempt,last_success,item_count,error,url) VALUES (?,?,?,?,?,?,?,?) ON CONFLICT(company_id,kind) DO UPDATE SET status=excluded.status,last_attempt=excluded.last_attempt,last_success=excluded.last_success,item_count=excluded.item_count,error=NULL,url=excluded.url", (cid,"jobs","ok",now,now,len(jobs),None,source_url))
     return {"count":len(jobs),"baseline":baseline}
 
@@ -196,6 +228,17 @@ def mark_error(db, company_id, kind, error, now=None):
     now = now or utc_now()
     with db:
         db.execute("INSERT INTO sources(company_id,kind,status,last_attempt,error) VALUES (?,?,?,?,?) ON CONFLICT(company_id,kind) DO UPDATE SET status='error',last_attempt=excluded.last_attempt,error=excluded.error", (company_id,kind,"error",now,str(error)[:300]))
+
+
+def relabel_jobs(db):
+    """Apply current title rules to old snapshots as well as newly fetched jobs."""
+    with db:
+        for row in db.execute("SELECT company_id,id,title FROM jobs").fetchall():
+            labels = classify_job(row["title"])
+            db.execute("""UPDATE jobs SET topics=?,relevant=?,role_family=?,topic_evidence=?
+              WHERE company_id=? AND id=?""",
+              (json.dumps(labels["topics"]),int(labels["role_family"] != "other"),
+               labels["role_family"],json.dumps(labels["topic_evidence"]),row["company_id"],row["id"]))
 
 
 def fetch_papers(company, since_days=30):
@@ -233,9 +276,10 @@ def export(db, out=OUT):
     cfg = companies()
     source_rows = db.execute("SELECT * FROM sources").fetchall()
     sources = {(r["company_id"],r["kind"]):dict(r) for r in source_rows}
-    jobs = [dict(r) for r in db.execute("SELECT company_id,id,title,location,url,published_at,topics,relevant,first_seen FROM jobs WHERE active=1 AND relevant=1 ORDER BY published_at DESC,title LIMIT 1000")]
+    jobs = [dict(r) for r in db.execute("SELECT company_id,id,title,location,url,published_at,topics,role_family,topic_evidence,unit_hint,first_seen FROM jobs WHERE active=1 AND relevant=1 ORDER BY published_at DESC,title LIMIT 1000")]
     for j in jobs:
         j["topics"] = json.loads(j["topics"])
+        j["topic_evidence"] = json.loads(j["topic_evidence"])
     events = [dict(r) for r in db.execute("SELECT e.company_id,e.job_id,e.kind,e.title,e.occurred_at FROM events e JOIN jobs j ON j.company_id=e.company_id AND j.id=e.job_id WHERE j.relevant=1 ORDER BY e.occurred_at DESC,e.id DESC LIMIT 250")]
     papers = [dict(r) for r in db.execute("SELECT company_id,title,publication_date,url,citations,first_seen FROM papers ORDER BY publication_date DESC LIMIT 250")]
     payload = {"generated_at":now,"method":"Public ATS APIs and OpenAlex; titles use rule-based topic tags. OpenAlex papers are candidates pending affiliation review.","companies":[],"jobs":jobs,"events":events,"papers":papers,"coverage":{"linkedin":"manual_search_only","x":"manual_search_only","llm":"not_configured"}}

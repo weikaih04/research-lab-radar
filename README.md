@@ -18,10 +18,12 @@ SQLite is a local cache. The tracked `state/snapshot.json` preserves baseline/hi
 
 ## Current coverage and limits
 
-- Jobs: public Ashby boards for OpenAI and Physical Intelligence; public Greenhouse boards for Anthropic and Skild AI; NVIDIA's publicly reachable Workday careers search for three focused queries (`research scientist`, `robotics`, `machine learning`). NVIDIA is a **targeted search**, not a complete company-wide job count. The five other rows are explicit `not_configured` until their career sources are validated.
+- Jobs: public Ashby boards for OpenAI and Physical Intelligence; public Greenhouse boards for Anthropic and Skild AI; NVIDIA's public Workday search; Google Careers' complete pagination for the targeted `research scientist` query; and Microsoft's public careers search for the targeted `researcher` query. Microsoft Research counts only positions explicitly named "Microsoft Research" and these are excluded from the general Microsoft row to avoid double-counting. NVIDIA, Google, Microsoft and MSR are **targeted searches**, not complete company-wide counts. Meta and Amazon remain unconnected.
+- Role families are conservative title rules (`research`, `research_engineering`, `ai_engineering`, `ai_infrastructure`). Non-research roles such as internal communications are excluded. Topic labels also come only from matched title words, and each exported topic includes its evidence text. A missing topic means "not specified in title", not "no relevant research".
+- The Microsoft careers site may rate-limit its public search endpoint. Retries are bounded; an incomplete or failed search is marked as an error and preserves the prior successful snapshot. A job is marked removed only after two successful snapshots omit it.
 - Papers: OpenAlex institution matches for eight organizations, looking back 30 days, DOI required. These are **candidates** because affiliation indexing and publication dates can be wrong. Physical Intelligence and Skild AI have no verified OpenAlex institution entry yet.
 - LinkedIn and X: manual live-search links only. There is no scraping or API ingestion and no claim of daily updates. An official X API connector can be added later with a monthly spend limit; it is intentionally off by default.
-- Topic tags: deterministic keyword rules on titles/descriptions, not LLM interpretation. Do not infer research strategy from one listing. First collection is a baseline and produces no “new job” events.
+- Topic tags: deterministic keyword rules on titles, not LLM interpretation. Do not infer research strategy from one listing. First collection is a baseline and produces no “new job” events.
 
 ## Data model
 

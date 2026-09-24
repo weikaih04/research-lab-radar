@@ -6,14 +6,14 @@ For each tracked organization, what *observable* evidence suggests a change in r
 
 ## Phase 1: reliable baseline (implemented)
 
-- Ten organizations in a fixed registry. Five public careers sources connected, of which NVIDIA is a focused search rather than a complete board. Five are openly marked unconnected.
-- Daily snapshots, first-run baseline, job additions/changes/removals, source health, preserved last-good data, static site, and free scheduled refresh/publish.
+- Ten organizations in a fixed registry. Public boards are connected for five organizations; Google, Microsoft and the named MSR subset use complete pagination of explicitly targeted official-careers searches. Meta and Amazon remain unconnected. Targeted searches are never presented as company-wide counts.
+- Daily snapshots, first-run baseline, job additions/changes/two-run-confirmed removals, source health, preserved last-good data, static site, and free scheduled refresh/publish. Title-based role families and matched title evidence replace the broad initial relevance rule.
 - OpenAlex AI-topic paper candidates with date/DOI filtering. They are *not* verified organization publications.
 - Manual LinkedIn and X live-search shortcuts. No API-based social monitoring yet.
 
 ## Phase 2: complete official hiring coverage
 
-For Meta, Google/DeepMind, Amazon, Microsoft and MSR, inspect each official careers site's accessible search/export interface. Add a connector only when it yields stable job IDs, source URLs, pagination, and dates. Treat MSR as a filtered Microsoft subset only if the official source exposes a reliable organization/research filter; otherwise keep it separate as a manual research queue. For every connector: record exact query scope, page count and last successful collection, and never turn a partial query into a whole-company number. Compare normalized listing IDs over time. Add two-run confirmation for removals if a site is known to have unstable pagination.
+For Meta and Amazon, inspect each official careers site's accessible search/export interface. Expand Google and Microsoft beyond their current targeted queries only when full pagination can be verified. MSR currently means postings whose official Microsoft title explicitly says "Microsoft Research"; it is a narrow subset, not all MSR hiring. For every connector: record exact query scope, page count and last successful collection, and never turn a partial query into a whole-company number. Compare normalized listing IDs over time. Two-run confirmation now prevents an unstable result page from immediately producing a false removal.
 
 Acceptance: each connected company has a source URL, successful full or explicitly partial baseline, and a test proving that a fetch failure cannot create false removal events.
 
