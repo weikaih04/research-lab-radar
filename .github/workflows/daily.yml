@@ -5,8 +5,13 @@ on:
     - cron: '17 16 * * *'
 permissions:
   contents: write
+  pages: write
+  id-token: write
 jobs:
   collect:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -25,3 +30,9 @@ jobs:
             git commit -m "Refresh research radar data"
             git push
           fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deployment
+        uses: actions/deploy-pages@v4
