@@ -1,6 +1,6 @@
 # Research Lab Radar
 
-Independent, source-linked dashboard for ten AI research organizations. It stores daily public hiring snapshots, emits changes only after a successful baseline, and displays paper *candidates* separately from verified hiring evidence.
+Daily public data feed for the independent Research Lab Radar page. It stores hiring snapshots, emits changes only after a successful baseline, and keeps paper *candidates* separate from verified hiring evidence.
 
 Live page: https://dashboard.ai-research-wk.com/lab-radar/
 
@@ -12,10 +12,9 @@ Python 3.10+; no packages or API keys required.
 
 ```sh
 python3 -m radar collect
-python3 -m http.server 8787 --directory site
 ```
 
-Open `http://localhost:8787`. Run `python3 -m radar collect` daily. SQLite is a local cache. The tracked `state/snapshot.json` preserves baseline/history for stateless runs, and `site/data.json` is the deployable static dataset. GitHub Actions runs collection daily at 16:17 UTC and publishes the `site/` folder through GitHub Pages after each data commit.
+SQLite is a local cache. The tracked `state/snapshot.json` preserves baseline/history for stateless runs, and `site/data.json` is the public data feed read by the dashboard domain. GitHub Actions runs collection daily at 16:17 UTC and publishes `site/` through GitHub Pages after each data commit. The old GitHub Pages landing page redirects visitors to the dashboard domain.
 
 ## Current coverage and limits
 
