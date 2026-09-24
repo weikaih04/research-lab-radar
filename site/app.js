@@ -21,12 +21,14 @@ function renderOverview() {
   const weekAgo = Date.now() - 7*86400000;
   $('#stat-jobs').textContent = DATA.jobs.length.toLocaleString();
   $('#stat-sources').textContent = `${ok.length} / ${DATA.companies.length}`;
+  $('#stat-sources').parentElement.querySelector('.stat-foot').textContent = 'NVIDIA 为定向搜索 · 其余为完整公开板';
   $('#stat-changes').textContent = DATA.events.filter(e => new Date(e.occurred_at).getTime() >= weekAgo).length;
   $('#stat-papers').textContent = DATA.papers.length;
   $('#company-grid').innerHTML = DATA.companies.map(c => {
     const status = c.sources.jobs.status;
-    const label = status === 'ok' ? '招聘已接入' : status === 'error' ? '采集异常' : '待接入';
-    return `<button class="company-card" data-company="${esc(c.id)}"><div class="company-top"><div class="company-icon">${esc(c.name[0])}</div><span class="company-status ${status === 'ok' ? '' : status === 'error' ? 'error' : 'pending'}">${label}</span></div><div class="company-name">${esc(c.name)}</div><div class="company-meta">${status === 'ok' ? `${c.relevant_jobs} 个相关职位 · ${esc(c.group)}` : `招聘数据待接入 · ${esc(c.group)}`}</div></button>`;
+    const partial = c.jobs && c.jobs.type === 'workday';
+    const label = status === 'ok' ? (partial ? '定向搜索' : '招聘已接入') : status === 'error' ? '采集异常' : '待接入';
+    return `<button class="company-card" data-company="${esc(c.id)}"><div class="company-top"><div class="company-icon">${esc(c.name[0])}</div><span class="company-status ${status === 'ok' ? '' : status === 'error' ? 'error' : 'pending'}">${label}</span></div><div class="company-name">${esc(c.name)}</div><div class="company-meta">${status === 'ok' ? `${c.relevant_jobs} 个相关职位${partial ? '（部分）' : ''} · ${esc(c.group)}` : `招聘数据待接入 · ${esc(c.group)}`}</div></button>`;
   }).join('');
   const recent = DATA.events.slice(0,4);
   $('#recent-changes').innerHTML = recent.length ? recent.map(e => `<div class="mini-row"><strong>${esc(company(e.company_id).name)} · ${esc(e.title)}</strong><span>${day(e.occurred_at)}</span></div>`).join('') : empty('目前只有首次基线，下一次成功采集后会显示真实变化。');
@@ -60,7 +62,8 @@ function renderCoverage() {
   $('#coverage-list').innerHTML = DATA.companies.map(c => {
     const jobs = c.sources.jobs, papers = c.sources.papers;
     const status = s => s.status === 'ok' ? `<span class="ok">已更新 · ${time(s.last_success)}</span>` : s.status === 'error' ? `<span class="error">采集失败 · 上次成功 ${time(s.last_success)}</span>` : `<span class="pending">未接入</span>`;
-    return `<article class="coverage-row"><div><strong>${esc(c.name)}</strong><span class="label">${esc(c.group)}</span></div><div><span class="label">公开职位</span>${status(jobs)}</div><div><span class="label">论文候选</span>${status(papers)}</div><div><span class="label">手动发现</span><a href="${esc(searchLink('linkedin',c.name))}" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a> · <a href="${esc(searchLink('x',c.name))}" target="_blank" rel="noopener noreferrer">X ↗</a></div></article>`;
+    const jobStatus = c.jobs && c.jobs.type === 'workday' && jobs.status === 'ok' ? `<span class="ok">定向搜索 · ${time(jobs.last_success)}</span>` : status(jobs);
+    return `<article class="coverage-row"><div><strong>${esc(c.name)}</strong><span class="label">${esc(c.group)}</span></div><div><span class="label">公开职位</span>${jobStatus}</div><div><span class="label">论文候选</span>${status(papers)}</div><div><span class="label">手动发现</span><a href="${esc(searchLink('linkedin',c.name))}" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a> · <a href="${esc(searchLink('x',c.name))}" target="_blank" rel="noopener noreferrer">X ↗</a></div></article>`;
   }).join('');
 }
 

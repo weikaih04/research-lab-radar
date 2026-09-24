@@ -1,23 +1,40 @@
 {
-  "generated_at": "2026-09-24T18:20:28+00:00",
+  "generated_at": "2026-09-24T18:23:19+00:00",
   "method": "Public ATS APIs and OpenAlex; titles use rule-based topic tags. OpenAlex papers are candidates pending affiliation review.",
   "companies": [
     {
       "id": "nvidia",
       "name": "NVIDIA",
       "group": "Big Tech",
-      "jobs": null,
-      "relevant_jobs": 0,
+      "jobs": {
+        "type": "workday",
+        "host": "nvidia.wd5.myworkdayjobs.com",
+        "tenant": "nvidia",
+        "site": "NVIDIAExternalCareerSite",
+        "terms": [
+          "research scientist",
+          "robotics",
+          "machine learning"
+        ]
+      },
+      "relevant_jobs": 95,
       "sources": {
         "jobs": {
-          "status": "not_configured"
+          "company_id": "nvidia",
+          "kind": "jobs",
+          "status": "ok",
+          "last_attempt": "2026-09-24T18:23:13+00:00",
+          "last_success": "2026-09-24T18:23:13+00:00",
+          "item_count": 115,
+          "error": null,
+          "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite"
         },
         "papers": {
           "company_id": "nvidia",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-09-24T18:20:24+00:00",
-          "last_success": "2026-09-24T18:20:24+00:00",
+          "last_attempt": "2026-09-24T18:23:13+00:00",
+          "last_success": "2026-09-24T18:23:13+00:00",
           "item_count": 4,
           "error": null,
           "url": "https://openalex.org/"
@@ -38,8 +55,8 @@
           "company_id": "meta",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-09-24T18:20:24+00:00",
-          "last_success": "2026-09-24T18:20:24+00:00",
+          "last_attempt": "2026-09-24T18:23:14+00:00",
+          "last_success": "2026-09-24T18:23:14+00:00",
           "item_count": 1,
           "error": null,
           "url": "https://openalex.org/"
@@ -60,8 +77,8 @@
           "company_id": "google",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-09-24T18:20:25+00:00",
-          "last_success": "2026-09-24T18:20:25+00:00",
+          "last_attempt": "2026-09-24T18:23:14+00:00",
+          "last_success": "2026-09-24T18:23:14+00:00",
           "item_count": 4,
           "error": null,
           "url": "https://openalex.org/"
@@ -82,8 +99,8 @@
           "company_id": "amazon",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-09-24T18:20:25+00:00",
-          "last_success": "2026-09-24T18:20:25+00:00",
+          "last_attempt": "2026-09-24T18:23:15+00:00",
+          "last_success": "2026-09-24T18:23:15+00:00",
           "item_count": 5,
           "error": null,
           "url": "https://openalex.org/"
@@ -104,8 +121,8 @@
           "company_id": "microsoft",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-09-24T18:20:25+00:00",
-          "last_success": "2026-09-24T18:20:25+00:00",
+          "last_attempt": "2026-09-24T18:23:15+00:00",
+          "last_success": "2026-09-24T18:23:15+00:00",
           "item_count": 7,
           "error": null,
           "url": "https://openalex.org/"
@@ -126,8 +143,8 @@
           "company_id": "msr",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-09-24T18:20:26+00:00",
-          "last_success": "2026-09-24T18:20:26+00:00",
+          "last_attempt": "2026-09-24T18:23:17+00:00",
+          "last_success": "2026-09-24T18:23:17+00:00",
           "item_count": 6,
           "error": null,
           "url": "https://openalex.org/"
@@ -148,8 +165,8 @@
           "company_id": "openai",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-09-24T18:20:26+00:00",
-          "last_success": "2026-09-24T18:20:26+00:00",
+          "last_attempt": "2026-09-24T18:23:17+00:00",
+          "last_success": "2026-09-24T18:23:17+00:00",
           "item_count": 826,
           "error": null,
           "url": "https://api.ashbyhq.com/posting-api/job-board/openai"
@@ -158,8 +175,8 @@
           "company_id": "openai",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-09-24T18:20:26+00:00",
-          "last_success": "2026-09-24T18:20:26+00:00",
+          "last_attempt": "2026-09-24T18:23:18+00:00",
+          "last_success": "2026-09-24T18:23:18+00:00",
           "item_count": 0,
           "error": null,
           "url": "https://openalex.org/"
@@ -180,8 +197,8 @@
           "company_id": "anthropic",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-09-24T18:20:26+00:00",
-          "last_success": "2026-09-24T18:20:26+00:00",
+          "last_attempt": "2026-09-24T18:23:19+00:00",
+          "last_success": "2026-09-24T18:23:19+00:00",
           "item_count": 628,
           "error": null,
           "url": "https://boards-api.greenhouse.io/v1/boards/anthropic/jobs?content=true"
@@ -190,8 +207,8 @@
           "company_id": "anthropic",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-09-24T18:20:28+00:00",
-          "last_success": "2026-09-24T18:20:28+00:00",
+          "last_attempt": "2026-09-24T18:23:19+00:00",
+          "last_success": "2026-09-24T18:23:19+00:00",
           "item_count": 0,
           "error": null,
           "url": "https://openalex.org/"
@@ -212,8 +229,8 @@
           "company_id": "physical-intelligence",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-09-24T18:20:28+00:00",
-          "last_success": "2026-09-24T18:20:28+00:00",
+          "last_attempt": "2026-09-24T18:23:19+00:00",
+          "last_success": "2026-09-24T18:23:19+00:00",
           "item_count": 35,
           "error": null,
           "url": "https://api.ashbyhq.com/posting-api/job-board/physicalintelligence"
@@ -237,8 +254,8 @@
           "company_id": "skild-ai",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-09-24T18:20:28+00:00",
-          "last_success": "2026-09-24T18:20:28+00:00",
+          "last_attempt": "2026-09-24T18:23:19+00:00",
+          "last_success": "2026-09-24T18:23:19+00:00",
           "item_count": 43,
           "error": null,
           "url": "https://boards-api.greenhouse.io/v1/boards/skildai-careers/jobs?content=true"
@@ -3409,6 +3426,1138 @@
       ],
       "relevant": 1,
       "first_seen": "2026-09-24T18:14:20+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2024054",
+      "title": "AI Developer Technology Intern, Robotics - 2027",
+      "location": "2 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Shanghai/AI-Developer-Technology-Intern--Robotics---2027_JR2024054-1",
+      "published_at": null,
+      "topics": [
+        "Robotics"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2015372",
+      "title": "AI Research Scientist",
+      "location": "2 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Singapore-Singapore-Suntec-Tower/AI-Research-Scientist_JR2015372",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2017533",
+      "title": "AI Research Scientist",
+      "location": "2 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Singapore-Singapore-Suntec-Tower/AI-Research-Scientist_JR2017533",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2018673",
+      "title": "AI Research Scientist",
+      "location": "2 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Singapore-Singapore-Suntec-Tower/AI-Research-Scientist_JR2018673",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2025689",
+      "title": "Applied Machine Learning Engineer - AI for VLSI Design",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Applied-Machine-Learning-Engineer---AI-for-VLSI-Design_JR2025689",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2011517",
+      "title": "Applied Machine Learning Engineer, Circuit Design - New College Grad 2026",
+      "location": "2 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Applied-Machine-Learning-Engineer--Circuit-Design---New-College-Grad-2026_JR2011517",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2023646",
+      "title": "Artificial Intelligence Research Intern - Deep Learning",
+      "location": "Taiwan, Taipei",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Taiwan-Taipei/Artificial-Intelligence-Research-Intern---Deep-Learning_JR2023646",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2018826",
+      "title": "Deep Learning Performance Architect",
+      "location": "China, Shanghai",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Shanghai/Deep-Learning-Performance-Architect_JR2018826-1",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2021807",
+      "title": "Deep Learning Performance Architect",
+      "location": "China, Shanghai",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Shanghai/Deep-Learning-Performance-Architect_JR2021807",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2019758",
+      "title": "Deep Learning Senior Engineer, End-To-End Autonomous Driving",
+      "location": "2 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Shanghai/Deep-Learning-Senior-Engineer--End-To-End-Autonomous-Driving_JR2019758",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2025542",
+      "title": "Humanoid Robot Learning Intern, Isaac Loco-Manipulation - 2027",
+      "location": "China, Shanghai",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Shanghai/Humanoid-Robot-Learning-Intern--Isaac-Loco-Manipulation---2027_JR2025542",
+      "published_at": null,
+      "topics": [
+        "Robotics"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2016809",
+      "title": "Machine Learning Engineer - Humanoid Robotics",
+      "location": "China, Shanghai",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Shanghai/Machine-Learning-Engineer---Humanoid-Robotics_JR2016809",
+      "published_at": null,
+      "topics": [
+        "Robotics"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2016768",
+      "title": "Manager, Deep Learning – Autonomous Vehicles and Robotics",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Manager--Deep-Learning---Autonomous-Vehicles-and-Robotics_JR2016768",
+      "published_at": null,
+      "topics": [
+        "Robotics"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2018293",
+      "title": "Mechanical Solution Engineer, Robotics",
+      "location": "2 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Shanghai/Mechanical-Solution-Engineer--Robotics_JR2018293-1",
+      "published_at": null,
+      "topics": [
+        "Robotics"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2023496",
+      "title": "NVIDIA 2027 Internships: Autonomous Vehicles and Robotics",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/NVIDIA-2027-Internships--Autonomous-Vehicles-and-Robotics_JR2023496",
+      "published_at": null,
+      "topics": [
+        "Robotics"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2025405",
+      "title": "PhD Research Intern, Learning Embodied Skills from Human Data - 2027",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/PhD-Research-Intern--Learning-Embodied-Skills-from-Human-Data---2027_JR2025405",
+      "published_at": null,
+      "topics": [
+        "Robotics"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2021918",
+      "title": "Principal Research Scientist, Synthetic Data Generation",
+      "location": "5 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Principal-Research-Scientist--Synthetic-Data-Generation_JR2021918",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2021367",
+      "title": "Principal SoC Architect, Robotics and Automotive",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Principal-SoC-Architect--Robotics-and-Automotive_JR2021367",
+      "published_at": null,
+      "topics": [
+        "Robotics"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2025647",
+      "title": "Research Intern, Robotics - Summer 2027",
+      "location": "2 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-WA-Seattle/Research-Intern--Robotics---Summer-2027_JR2025647",
+      "published_at": null,
+      "topics": [
+        "Robotics"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2025138",
+      "title": "Research Scientist",
+      "location": "2 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Singapore-Singapore-Suntec-Tower/Research-Scientist_JR2025138",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2020802",
+      "title": "Research Scientist - AI",
+      "location": "Singapore, Pasir Panjang",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Singapore-Pasir-Panjang/Research-Scientist---AI_JR2020802",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR1998091",
+      "title": "Research Scientist - New College Grad 2025",
+      "location": "Armenia, Yerevan",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Armenia-Yerevan/Research-Scientist---New-College-Grad-2025_JR1998091-1",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2011644",
+      "title": "Research Scientist, AI Accelerator Design and VLSI - New College Grad 2026",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Research-Scientist--AI-Accelerator-SW-HW-Co-Design---New-College-Grad-2026_JR2011644",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2023706",
+      "title": "Research Scientist, AI RL and LLMs",
+      "location": "2 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Switzerland-Zurich/Research-Scientist--AI-RL-and-LLMs_JR2023706",
+      "published_at": null,
+      "topics": [
+        "Language models"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2011267",
+      "title": "Research Scientist, AI for Graphics and Gaming - New College Grad 2026",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Research-Scientist--AI-for-Graphics-and-Gaming---New-College-Grad-2026_JR2011267",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2010010",
+      "title": "Research Scientist, Circuits - PhD New College Grad 2026",
+      "location": "2 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Research-Scientist--Circuits---New-College-Grad-2026_JR2010010",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2018685",
+      "title": "Research Scientist, Deep Learning and Computer Vision - New College Graduate",
+      "location": "Taiwan, Taipei",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Taiwan-Taipei/Research-Scientist--Deep-Learning-and-Computer-Vision---New-College-Graduate_JR2018685",
+      "published_at": null,
+      "topics": [
+        "AI infrastructure"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2019729",
+      "title": "Research Scientist, Efficient Deep Learning - New College Grad 2026",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Research-Scientist--Efficient-Deep-Learning---New-College-Grad-2026_JR2019729-1",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2012979",
+      "title": "Research Scientist, Electronic Design Automation - New College Grad 2026",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Research-Scientist--Electronic-Design-Automation---New-College-Grad-2026_JR2012979",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2012698",
+      "title": "Research Scientist, Fundamental Generative AI - New College Grad 2026",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Research-Scientist--Fundamental-Generative-AI---New-College-Grad-2026_JR2012698",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2009294",
+      "title": "Research Scientist, Generalist Embodied Agent Research - PhD New College Grad 2026",
+      "location": "2 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Research-Scientist--Generalist-Embodied-Agent-Research---New-College-Grad-2026_JR2009294",
+      "published_at": null,
+      "topics": [
+        "Robotics",
+        "Agents"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2010161",
+      "title": "Research Scientist, ML Systems - PhD New College Grad 2026",
+      "location": "4 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Research-Scientist--ML-Systems---New-College-Grad-2026_JR2010161",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2024900",
+      "title": "Research Scientist, Networking Research - PhD New College Grad 2026",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Research-Scientist--Networking-Research---PhD-New-College-Grad-2026_JR2024900-1",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2016032",
+      "title": "Research Scientist, Physical AI - Foundation Models - PhD New College Grad 2026",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Research-Scientist--Generative-AI-for-Physical-AI---PhD-New-College-Grad-2026_JR2016032",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2011473",
+      "title": "Research Scientist, Robotics Research -  PhD New College Grad 2026",
+      "location": "US, WA, Seattle",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-WA-Seattle/Research-Scientist--Robotics-Research----PhD-New-College-Grad-2026_JR2011473",
+      "published_at": null,
+      "topics": [
+        "Robotics"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2023397",
+      "title": "Robotics Research Engineer - Robot Simulation and Evaluation",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Robotics-Research-Engineer---Robot-Simulation-and-Evaluation_JR2023397",
+      "published_at": null,
+      "topics": [
+        "Robotics",
+        "Safety"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2024365",
+      "title": "Senior Applied Research Scientist, Data Curation",
+      "location": "6 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Applied-Research-Scientist--Data-Curation_JR2024365",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2022219",
+      "title": "Senior Applied Research Scientist, Multimodal Foundation Models – Healthcare",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Applied-Research-Scientist--Multimodal-Foundation-Models---Healthcare_JR2022219",
+      "published_at": null,
+      "topics": [
+        "Multimodal"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2023503",
+      "title": "Senior DFX Software Engineer - Machine Learning",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-DFX-Software-Engineer---Machine-Learning_JR2023503",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2006852",
+      "title": "Senior Deep Learning Computer Architect",
+      "location": "2 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Deep-Learning-Computer-Architect_JR2006852",
+      "published_at": null,
+      "topics": [
+        "AI infrastructure"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2022437",
+      "title": "Senior Deep Learning Engineer, Accuracy Evaluation",
+      "location": "5 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Poland-Remote/Senior-Deep-Learning-Engineer--Accuracy-Evaluation_JR2022437",
+      "published_at": null,
+      "topics": [
+        "Safety"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2017369",
+      "title": "Senior Deep Learning Frameworks CUDA Software Engineer",
+      "location": "3 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Deep-Learning-Frameworks-CUDA-Software-Engineer_JR2017369",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2003385",
+      "title": "Senior Deep Learning Frameworks Sustaining Engineer",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Deep-Learning-Frameworks-Sustaining-Engineer_JR2003385",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2006619",
+      "title": "Senior Deep Learning Performance Architect",
+      "location": "2 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Deep-Learning-Performance-Architect_JR2006619",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2012736",
+      "title": "Senior Deep Learning Performance Architect - LPU",
+      "location": "2 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Remote/Senior-Deep-Learning-Performance-Architect_JR2012736",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2015694",
+      "title": "Senior Deep Learning Solution Architect",
+      "location": "2 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Shanghai/Senior-Deep-Learning-Solution-Architect_JR2015694",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2024045",
+      "title": "Senior Deep Learning Solution Architect",
+      "location": "2 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Beijing/Senior-Deep-Learning-Solution-Architect_JR2024045",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2024043",
+      "title": "Senior Deep Learning Solution Architect",
+      "location": "2 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Beijing/Senior-Deep-Learning-Solution-Architect_JR2024043",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2003682",
+      "title": "Senior Deep Learning Systems Architect",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Deep-Learning-Systems-Architect_JR2003682",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2013492",
+      "title": "Senior HPC Performance Engineer - AI for Science at Scale",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-HPC-Performance-Engineer---AI-for-Science-at-Scale_JR2013492",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2012562",
+      "title": "Senior Machine Learning Applications and Compiler Engineer, LPX",
+      "location": "2 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Canada-Toronto/Senior-Machine-Learning-Applications-and-Compiler-Engineer_JR2012562",
+      "published_at": null,
+      "topics": [
+        "AI infrastructure"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2012559",
+      "title": "Senior Machine Learning Applications and Compiler Engineer, LPX",
+      "location": "2 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Machine-Learning-Applications-and-Compiler-Engineer_JR2012559",
+      "published_at": null,
+      "topics": [
+        "AI infrastructure"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2013261",
+      "title": "Senior Machine Learning Applications and Compiler Engineer, LPX",
+      "location": "2 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/UK-Cambridge/Senior-Machine-Learning-Applications-and-Compiler-Engineer_JR2013261",
+      "published_at": null,
+      "topics": [
+        "AI infrastructure"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2024455",
+      "title": "Senior Machine Learning Engineer, Accelerated Apache Spark",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Machine-Learning-Engineer--Accelerated-Apache-Spark_JR2024455",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2018915",
+      "title": "Senior Machine Learning Engineer, Perception - Autonomous Driving",
+      "location": "3 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Machine-Learning-Engineer--Perception---Autonomous-Driving_JR2018915",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2024785",
+      "title": "Senior Machine Learning Engineer, Perception - Autonomous Driving",
+      "location": "2 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Machine-Learning-Engineer--Perception---Autonomous-Driving_JR2024785",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2010863",
+      "title": "Senior Machine Learning and Simulation Engineer - Autonomous Vehicles",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Machine-Learning-and-Simulation-Engineer---Autonomous-Vehicles_JR2010863",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2015168",
+      "title": "Senior Manager, Machine Learning Ops Engineering - Automotive",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/SeniorManager--Machine-Learning-Ops-Engineering---Automotive_JR2015168",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2003248",
+      "title": "Senior Manager, Robotics Quality Assurance",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Manager--Robotics-Quality-Assurance_JR2003248",
+      "published_at": null,
+      "topics": [
+        "Robotics"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2020949",
+      "title": "Senior Manager, Software Engineering - Robotics Manipulation",
+      "location": "6 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Manager--Software-Engineering---Robotics-Manipulation_JR2020949",
+      "published_at": null,
+      "topics": [
+        "Robotics"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2018110",
+      "title": "Senior Quantum AI Research Scientist,  Applied Research",
+      "location": "2 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-WA-Redmond/Senior-Quantum-AI-Research-Scientist---Applied-Research_JR2018110",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2012666",
+      "title": "Senior Quantum Algorithm Researcher",
+      "location": "UK, Remote",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/UK-Remote/Senior-Quantum-Algorithm-Researcher_JR2012666-1",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2019517",
+      "title": "Senior Quantum Applied Research Scientist, Calibration and Decoding",
+      "location": "3 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-WA-Redmond/Senior-Quantum-Applied-Research-Scientist--Calibration-and-Decoding_JR2019517",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2019518",
+      "title": "Senior Quantum Applied Research Scientist, Physics Modeling",
+      "location": "3 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-WA-Redmond/Senior-Quantum-Applied-Research-Scientist--Physics-Modeling_JR2019518",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2008226",
+      "title": "Senior Quantum Error Correction Research Scientist, Applied Research",
+      "location": "2 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-WA-Redmond/Senior-Quantum-Error-Correction-Research-Scientist--Applied-Research_JR2008226",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2021002",
+      "title": "Senior Research Engineer - Enterprise Products",
+      "location": "3 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-WA-Remote/Senior-Research-Engineer---Enterprise-Products_JR2021002",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2017450",
+      "title": "Senior Research Engineer, Robotics Systems",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Research-Engineer--Robotics-Systems_JR2017450",
+      "published_at": null,
+      "topics": [
+        "Robotics"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2005596",
+      "title": "Senior Research Scientist - Autonomous Vehicles",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Research-Scientist---Autonomous-Vehicles_JR2005596",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2008124",
+      "title": "Senior Research Scientist for Generative AI",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Research-Scientist-for-Generative-AI_JR2008124",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2015948",
+      "title": "Senior Research Scientist, Circuits",
+      "location": "2 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Research-Scientist--Circuits_JR2015948",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2009709",
+      "title": "Senior Research Scientist, Efficient Deep Learning",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Research-Scientist--Efficient-Deep-Learning_JR2009709",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2013039",
+      "title": "Senior Research Scientist, Fundamental Generative AI",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Research-Scientist--Fundamental-Generative-AI_JR2013039",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2020674",
+      "title": "Senior Research Scientist, Human‑AI Perception and Interaction",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Research-Scientist--Human-AI-Perception-and-Interaction_JR2020674",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2017288",
+      "title": "Senior Research Scientist, Multimodal Foundation Models and Robotics",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Research-Scientist--Multimodal-Foundation-Models-and-Robotics_JR2017288",
+      "published_at": null,
+      "topics": [
+        "Robotics",
+        "Multimodal"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2006106",
+      "title": "Senior Research Scientist, Multimodal Foundation Models and Robotics",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Research-Scientist--Multimodal-Foundation-Models-and-Robotics_JR2006106",
+      "published_at": null,
+      "topics": [
+        "Robotics",
+        "Multimodal"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2008904",
+      "title": "Senior Research Scientist, Security and Privacy",
+      "location": "2 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-MA-Westford/Senior-Research-Scientist--Security-and-Privacy_JR2008904",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2009432",
+      "title": "Senior Research Scientist, System Software and I/O Architecture",
+      "location": "3 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Research-Scientist--System-Software-and-I-O-Architecture_JR2009432",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2016068",
+      "title": "Senior Robotics Research Engineer, Robotics and AI for Drug Discovery",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Robotics-Research-Engineer--Robotics-and-AI-for-Drug-Discovery_JR2016068",
+      "published_at": null,
+      "topics": [
+        "Robotics"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2000652",
+      "title": "Senior Robotics Research Scientist",
+      "location": "US, WA, Seattle",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-WA-Seattle/Senior-Robotics-Research-Scientist_JR2000652",
+      "published_at": null,
+      "topics": [
+        "Robotics"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2025158",
+      "title": "Senior Robotics Systems Engineer — Sim-to-Real",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Robotics-Systems-Engineer---Sim-to-Real_JR2025158",
+      "published_at": null,
+      "topics": [
+        "Robotics"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2019460",
+      "title": "Senior Scientist, Synthetic Data Generation",
+      "location": "5 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Scientist--Synthetic-Data-Generation_JR2019460",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2021411",
+      "title": "Senior Software Engineer - Applied Research in Robotics",
+      "location": "India, Bengaluru",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/India-Bengaluru/Senior-Software-Engineer---Applied-Research-in-Robotics_JR2021411",
+      "published_at": null,
+      "topics": [
+        "Robotics"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2022617",
+      "title": "Senior Software Engineer, Agentic Robotics Infrastructure",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Engineer--Agentic-Robotics-Infrastructure_JR2022617",
+      "published_at": null,
+      "topics": [
+        "Robotics",
+        "Agents"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2022830",
+      "title": "Senior Software Engineer, CUDA Deep Learning Systems",
+      "location": "3 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Engineer--CUDA-Deep-Learning-Systems_JR2022830",
+      "published_at": null,
+      "topics": [],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2005063",
+      "title": "Senior Software Engineer, Humanoid Robotics",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Engineer--Humanoid-Robotics_JR2005063",
+      "published_at": null,
+      "topics": [
+        "Robotics"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2024853",
+      "title": "Senior Software Test Developer, SDET - Robotics",
+      "location": "China, Shanghai",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Shanghai/Senior-Software-Test-Developer--SDET---Robotics_JR2024853",
+      "published_at": null,
+      "topics": [
+        "Robotics"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2026332",
+      "title": "Senior System Software Engineer, Robotics",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-System-Software-Engineer--Robotics_JR2026332",
+      "published_at": null,
+      "topics": [
+        "Robotics"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2005324",
+      "title": "Senior Workflow Specialist - Isaac Robotics",
+      "location": "2 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Workflow-Specialist---Isaac-Robotics_JR2005324",
+      "published_at": null,
+      "topics": [
+        "Robotics"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2020129",
+      "title": "Simulation Engineer, Industrial Physics and Robotics",
+      "location": "3 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Shanghai/Simulation-Engineer--Industrial-Physics-and-Robotics_JR2020129-1",
+      "published_at": null,
+      "topics": [
+        "Robotics"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2020130",
+      "title": "Simulation Engineer, Industrial Physics and Robotics",
+      "location": "Korea, Seoul",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Korea-Seoul/Simulation-Engineer--Industrial-Physics-and-Robotics_JR2020130-1",
+      "published_at": null,
+      "topics": [
+        "Robotics"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2013560",
+      "title": "Software Engineering Manager, Robotics",
+      "location": "China, Shanghai",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Shanghai/Software-Engineering-Manager--Robotics_JR2013560",
+      "published_at": null,
+      "topics": [
+        "Robotics"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2023987",
+      "title": "Software Manager, Robotics Platform Engineering",
+      "location": "China, Shanghai",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Shanghai/Software-Manager--Robotics-Platform-Engineering_JR2023987",
+      "published_at": null,
+      "topics": [
+        "Robotics"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2025050",
+      "title": "Software Test Developer - Robotics",
+      "location": "India, Pune",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/India-Pune/Software-Test-Developer---Robotics_JR2025050",
+      "published_at": null,
+      "topics": [
+        "Robotics"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2024862",
+      "title": "Software Test Developer, SDET - Robotics",
+      "location": "China, Shanghai",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Shanghai/Software-Test-Developer--SDET---Robotics_JR2024862",
+      "published_at": null,
+      "topics": [
+        "Robotics"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2018789",
+      "title": "Solution Architect ISV - Robotics",
+      "location": "3 Locations",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Shenzhen/Solution-Architect-ISV---Robotics_JR2018789",
+      "published_at": null,
+      "topics": [
+        "Robotics"
+      ],
+      "relevant": 1,
+      "first_seen": "2026-09-24T18:22:40+00:00"
     }
   ],
   "events": [],

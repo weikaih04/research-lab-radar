@@ -1,5 +1,5 @@
 [
-  {"id":"nvidia","name":"NVIDIA","group":"Big Tech","jobs":null,"openalex_ids":["I4210127875"]},
+  {"id":"nvidia","name":"NVIDIA","group":"Big Tech","jobs":{"type":"workday","host":"nvidia.wd5.myworkdayjobs.com","tenant":"nvidia","site":"NVIDIAExternalCareerSite","terms":["research scientist","robotics","machine learning"]},"openalex_ids":["I4210127875"]},
   {"id":"meta","name":"Meta","group":"Big Tech","jobs":null,"openalex_ids":["I4210114444"]},
   {"id":"google","name":"Google / DeepMind","group":"Big Tech","jobs":null,"openalex_ids":["I1291425158","I4210090411"]},
   {"id":"amazon","name":"Amazon","group":"Big Tech","jobs":null,"openalex_ids":["I1311688040"]},

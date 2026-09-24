@@ -23,7 +23,7 @@ TOPICS = {
     "Agents": ["agent", "tool use", "computer use", "planning"],
 }
 RELEVANT = re.compile(r"research|scientist|machine learning|\bml\b|robot|language model|deep learning|computer vision|foundation model|inference|training|multimodal|alignment|\bai\b.*engineer|engineer.*\bai\b", re.I)
-IRRELEVANT = re.compile(r"recruit|sales|account executive|marketing|support|customer|operations|business development|deployment manager|product manager|program manager|demand planning|legal|finance|human resources|people partner|solutions architect|counsel|economist|policy research|user experience research|developer productivity|\bgtm\b", re.I)
+IRRELEVANT = re.compile(r"recruit|sales|account|channel manager|developer relation|marketing|support|customer|operations|business development|deployment manager|product manager|program manager|demand planning|legal|finance|human resources|people partner|solutions architect|counsel|economist|policy research|user experience research|developer productivity|\bgtm\b", re.I)
 PAPER_RELEVANT = re.compile(r"artificial intelligence|machine learning|deep learning|language model|\bllm\b|robot|multimodal|computer vision|agentic|\bagent\b|reinforcement learning|neural network|generative ai|transformer|speech recognition|ai safety|alignment|interpretability|foundation model|diffusion model", re.I)
 
 
@@ -37,13 +37,24 @@ def get_json(url):
         return json.load(response)
 
 
+def post_json(url, payload):
+    req = urllib.request.Request(url, data=json.dumps(payload).encode(), headers={"User-Agent": "Mozilla/5.0 (ResearchLabRadar/0.1)", "Accept": "application/json", "Content-Type": "application/json"}, method="POST")
+    with urllib.request.urlopen(req, timeout=30) as response:
+        return json.load(response)
+
+
 def companies():
     return json.loads(CONFIG.read_text())
 
 
 def normalize_job(company, raw):
     provider = company["jobs"]["type"]
-    if provider == "ashby":
+    if provider == "workday":
+        source = company["jobs"]
+        path = raw["externalPath"]
+        title = raw.get("title") or ""
+        result = {"id": (raw.get("bulletFields") or [path])[-1], "title": title, "location": raw.get("locationsText") or "", "url": f"https://{source['host']}/en-US/{source['site']}{path}", "published_at": None, "description": ""}
+    elif provider == "ashby":
         title = raw.get("title") or ""
         description = raw.get("descriptionPlain") or ""
         result = {"id": str(raw["id"]), "title": title, "location": raw.get("location") or "", "url": raw.get("jobUrl") or "", "published_at": raw.get("publishedAt"), "description": description}
@@ -64,6 +75,26 @@ def classify(text):
 
 def fetch_jobs(company):
     source = company["jobs"]
+    if source["type"] == "workday":
+        endpoint = f"https://{source['host']}/wday/cxs/{source['tenant']}/{source['site']}/jobs"
+        found = {}
+        for term in source["terms"]:
+            offset = 0
+            while True:
+                page = post_json(endpoint, {"appliedFacets":{},"limit":20,"offset":offset,"searchText":term})
+                postings = page.get("jobPostings") or []
+                if not postings and offset == 0:
+                    raise ValueError(f"Empty Workday response for {term}; keeping prior snapshot")
+                for item in postings:
+                    normalized = normalize_job(company,item)
+                    found[normalized["id"]] = normalized
+                offset += len(postings)
+                if offset >= page.get("total",0) or len(postings) < 20:
+                    break
+        jobs = list(found.values())
+        if not jobs:
+            raise ValueError("Empty job response; keeping previous snapshot")
+        return jobs, f"https://{source['host']}/en-US/{source['site']}"
     if source["type"] == "ashby":
         url = "https://api.ashbyhq.com/posting-api/job-board/" + urllib.parse.quote(source["token"])
     else:

@@ -51,6 +51,12 @@ class SnapshotTests(unittest.TestCase):
         self.assertFalse(sales["relevant"])
         self.assertTrue(scientist["relevant"])
 
+    def test_workday_job_keeps_official_link(self):
+        company = {"id":"nvidia","jobs":{"type":"workday","host":"nvidia.wd5.myworkdayjobs.com","site":"NVIDIAExternalCareerSite"}}
+        job = normalize_job(company,{"title":"Research Scientist, Robotics","externalPath":"/job/Test/Research-Scientist_JR42","bulletFields":["JR42"],"locationsText":"Santa Clara"})
+        self.assertEqual("JR42",job["id"])
+        self.assertEqual("https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/Test/Research-Scientist_JR42",job["url"])
+
 
 if __name__ == "__main__":
     unittest.main()
