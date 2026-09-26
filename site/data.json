@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T20:03:10+00:00",
+  "generated_at": "2026-09-26T19:13:41+00:00",
   "method": "Public ATS APIs and OpenAlex; titles use rule-based topic tags. OpenAlex papers are candidates pending affiliation review.",
   "companies": [
     {
@@ -23,8 +23,8 @@
           "company_id": "nvidia",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-09-25T20:01:54+00:00",
-          "last_success": "2026-09-25T20:01:54+00:00",
+          "last_attempt": "2026-09-26T19:13:31+00:00",
+          "last_success": "2026-09-26T19:13:31+00:00",
           "item_count": 115,
           "error": null,
           "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite"
@@ -33,8 +33,8 @@
           "company_id": "nvidia",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-09-25T20:01:54+00:00",
-          "last_success": "2026-09-25T20:01:54+00:00",
+          "last_attempt": "2026-09-26T19:13:32+00:00",
+          "last_success": "2026-09-26T19:13:32+00:00",
           "item_count": 5,
           "error": null,
           "url": "https://openalex.org/"
@@ -55,8 +55,8 @@
           "company_id": "meta",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-09-25T20:01:54+00:00",
-          "last_success": "2026-09-25T20:01:54+00:00",
+          "last_attempt": "2026-09-26T19:13:32+00:00",
+          "last_success": "2026-09-26T19:13:32+00:00",
           "item_count": 1,
           "error": null,
           "url": "https://openalex.org/"
@@ -72,15 +72,15 @@
         "query": "research scientist",
         "scope": "targeted"
       },
-      "relevant_jobs": 110,
+      "relevant_jobs": 107,
       "sources": {
         "jobs": {
           "company_id": "google",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-09-25T20:01:59+00:00",
-          "last_success": "2026-09-25T20:01:59+00:00",
-          "item_count": 222,
+          "last_attempt": "2026-09-26T19:13:36+00:00",
+          "last_success": "2026-09-26T19:13:36+00:00",
+          "item_count": 224,
           "error": null,
           "url": "https://www.google.com/about/careers/applications/jobs/results/?q=research+scientist"
         },
@@ -88,8 +88,8 @@
           "company_id": "google",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-09-25T20:01:59+00:00",
-          "last_success": "2026-09-25T20:01:59+00:00",
+          "last_attempt": "2026-09-26T19:13:36+00:00",
+          "last_success": "2026-09-26T19:13:36+00:00",
           "item_count": 4,
           "error": null,
           "url": "https://openalex.org/"
@@ -110,9 +110,9 @@
           "company_id": "amazon",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-09-25T20:01:59+00:00",
-          "last_success": "2026-09-25T20:01:59+00:00",
-          "item_count": 5,
+          "last_attempt": "2026-09-26T19:13:37+00:00",
+          "last_success": "2026-09-26T19:13:37+00:00",
+          "item_count": 6,
           "error": null,
           "url": "https://openalex.org/"
         }
@@ -128,15 +128,15 @@
         "subset": "other",
         "scope": "targeted"
       },
-      "relevant_jobs": 35,
+      "relevant_jobs": 34,
       "sources": {
         "jobs": {
           "company_id": "microsoft",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-09-25T20:03:08+00:00",
-          "last_success": "2026-09-25T20:03:08+00:00",
-          "item_count": 52,
+          "last_attempt": "2026-09-26T19:13:39+00:00",
+          "last_success": "2026-09-26T19:13:39+00:00",
+          "item_count": 48,
           "error": null,
           "url": "https://apply.careers.microsoft.com/careers?query=researcher"
         },
@@ -144,8 +144,8 @@
           "company_id": "microsoft",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-09-25T20:03:08+00:00",
-          "last_success": "2026-09-25T20:03:08+00:00",
+          "last_attempt": "2026-09-26T19:13:39+00:00",
+          "last_success": "2026-09-26T19:13:39+00:00",
           "item_count": 6,
           "error": null,
           "url": "https://openalex.org/"
@@ -168,8 +168,8 @@
           "company_id": "msr",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-09-25T20:03:08+00:00",
-          "last_success": "2026-09-25T20:03:08+00:00",
+          "last_attempt": "2026-09-26T19:13:39+00:00",
+          "last_success": "2026-09-26T19:13:39+00:00",
           "item_count": 3,
           "error": null,
           "url": "https://apply.careers.microsoft.com/careers?query=researcher"
@@ -178,8 +178,8 @@
           "company_id": "msr",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-09-25T20:03:08+00:00",
-          "last_success": "2026-09-25T20:03:08+00:00",
+          "last_attempt": "2026-09-26T19:13:39+00:00",
+          "last_success": "2026-09-26T19:13:39+00:00",
           "item_count": 5,
           "error": null,
           "url": "https://openalex.org/"
@@ -194,15 +194,15 @@
         "type": "ashby",
         "token": "openai"
       },
-      "relevant_jobs": 113,
+      "relevant_jobs": 112,
       "sources": {
         "jobs": {
           "company_id": "openai",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-09-25T20:03:09+00:00",
-          "last_success": "2026-09-25T20:03:09+00:00",
-          "item_count": 829,
+          "last_attempt": "2026-09-26T19:13:40+00:00",
+          "last_success": "2026-09-26T19:13:40+00:00",
+          "item_count": 830,
           "error": null,
           "url": "https://api.ashbyhq.com/posting-api/job-board/openai"
         },
@@ -210,8 +210,8 @@
           "company_id": "openai",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-09-25T20:03:09+00:00",
-          "last_success": "2026-09-25T20:03:09+00:00",
+          "last_attempt": "2026-09-26T19:13:40+00:00",
+          "last_success": "2026-09-26T19:13:40+00:00",
           "item_count": 0,
           "error": null,
           "url": "https://openalex.org/"
@@ -226,15 +226,15 @@
         "type": "greenhouse",
         "token": "anthropic"
       },
-      "relevant_jobs": 75,
+      "relevant_jobs": 74,
       "sources": {
         "jobs": {
           "company_id": "anthropic",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-09-25T20:03:10+00:00",
-          "last_success": "2026-09-25T20:03:10+00:00",
-          "item_count": 623,
+          "last_attempt": "2026-09-26T19:13:40+00:00",
+          "last_success": "2026-09-26T19:13:40+00:00",
+          "item_count": 618,
           "error": null,
           "url": "https://boards-api.greenhouse.io/v1/boards/anthropic/jobs?content=true"
         },
@@ -242,8 +242,8 @@
           "company_id": "anthropic",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-09-25T20:03:10+00:00",
-          "last_success": "2026-09-25T20:03:10+00:00",
+          "last_attempt": "2026-09-26T19:13:41+00:00",
+          "last_success": "2026-09-26T19:13:41+00:00",
           "item_count": 0,
           "error": null,
           "url": "https://openalex.org/"
@@ -264,8 +264,8 @@
           "company_id": "physical-intelligence",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-09-25T20:03:10+00:00",
-          "last_success": "2026-09-25T20:03:10+00:00",
+          "last_attempt": "2026-09-26T19:13:41+00:00",
+          "last_success": "2026-09-26T19:13:41+00:00",
           "item_count": 35,
           "error": null,
           "url": "https://api.ashbyhq.com/posting-api/job-board/physicalintelligence"
@@ -289,9 +289,9 @@
           "company_id": "skild-ai",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-09-25T20:03:10+00:00",
-          "last_success": "2026-09-25T20:03:10+00:00",
-          "item_count": 44,
+          "last_attempt": "2026-09-26T19:13:41+00:00",
+          "last_success": "2026-09-26T19:13:41+00:00",
+          "item_count": 46,
           "error": null,
           "url": "https://boards-api.greenhouse.io/v1/boards/skildai-careers/jobs?content=true"
         },
@@ -476,19 +476,6 @@
       "first_seen": "2026-09-24T22:28:04+00:00"
     },
     {
-      "company_id": "openai",
-      "id": "e1d8b590-8a91-42bb-ba2e-64b99c87e4ac",
-      "title": "Applied AI Engineer, Codex",
-      "location": "Sydney, Australia",
-      "url": "https://jobs.ashbyhq.com/openai/e1d8b590-8a91-42bb-ba2e-64b99c87e4ac",
-      "published_at": "2026-09-22T08:51:54.660+00:00",
-      "topics": [],
-      "role_family": "ai_engineering",
-      "topic_evidence": {},
-      "unit_hint": "",
-      "first_seen": "2026-09-24T18:14:20+00:00"
-    },
-    {
       "company_id": "microsoft",
       "id": "1970393556962157",
       "title": "Security Research INTERN",
@@ -595,19 +582,6 @@
       "topic_evidence": {},
       "unit_hint": "",
       "first_seen": "2026-09-24T18:14:20+00:00"
-    },
-    {
-      "company_id": "microsoft",
-      "id": "1970393556985425",
-      "title": "Applied AI Scientist II",
-      "location": "Bengaluru, KA, IN",
-      "url": "https://apply.careers.microsoft.com/careers/job/1970393556985425",
-      "published_at": "2026-09-18T04:25:25+00:00",
-      "topics": [],
-      "role_family": "research",
-      "topic_evidence": {},
-      "unit_hint": "Applied Sciences",
-      "first_seen": "2026-09-24T22:28:04+00:00"
     },
     {
       "company_id": "microsoft",
@@ -2353,19 +2327,6 @@
     },
     {
       "company_id": "anthropic",
-      "id": "5271380008",
-      "title": "Research Engineer, Domain Scaling",
-      "location": "San Francisco, CA | New York City, NY | Seattle, WA",
-      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5271380008",
-      "published_at": "2026-06-19T14:36:38-04:00",
-      "topics": [],
-      "role_family": "research_engineering",
-      "topic_evidence": {},
-      "unit_hint": "",
-      "first_seen": "2026-09-24T18:14:22+00:00"
-    },
-    {
-      "company_id": "anthropic",
       "id": "5257650008",
       "title": "Staff+ Software Engineer, Inference Velocity",
       "location": "Remote-Friendly (Travel-Required) | San Francisco, CA | Seattle, WA | New York City, NY",
@@ -3924,19 +3885,6 @@
     },
     {
       "company_id": "google",
-      "id": "133517804614623942",
-      "title": "Applied AI Engineer",
-      "location": "London, UK; Madrid, Spain",
-      "url": "https://www.google.com/about/careers/applications/jobs/results/133517804614623942-applied-ai-engineer",
-      "published_at": null,
-      "topics": [],
-      "role_family": "ai_engineering",
-      "topic_evidence": {},
-      "unit_hint": "Google",
-      "first_seen": "2026-09-24T22:21:23+00:00"
-    },
-    {
-      "company_id": "google",
       "id": "91512172982477510",
       "title": "Applied AI/ML Engineer",
       "location": "Bengaluru, Karnataka, India",
@@ -3986,23 +3934,6 @@
       "topic_evidence": {},
       "unit_hint": "",
       "first_seen": "2026-09-24T18:22:40+00:00"
-    },
-    {
-      "company_id": "google",
-      "id": "136641397963793094",
-      "title": "Audio to Audio Research Scientist, DeepMind",
-      "location": "Mountain View, CA, USA; New York, NY, USA",
-      "url": "https://www.google.com/about/careers/applications/jobs/results/136641397963793094-audio-to-audio-research-scientist-deepmind",
-      "published_at": null,
-      "topics": [
-        "Multimodal"
-      ],
-      "role_family": "research",
-      "topic_evidence": {
-        "Multimodal": "Audio"
-      },
-      "unit_hint": "DeepMind",
-      "first_seen": "2026-09-24T22:21:23+00:00"
     },
     {
       "company_id": "google",
@@ -4516,19 +4447,6 @@
       "first_seen": "2026-09-24T18:22:40+00:00"
     },
     {
-      "company_id": "google",
-      "id": "113097198995940038",
-      "title": "Research Scientist",
-      "location": "London, UK; Mountain View, CA, USA",
-      "url": "https://www.google.com/about/careers/applications/jobs/results/113097198995940038-research-scientist",
-      "published_at": null,
-      "topics": [],
-      "role_family": "research",
-      "topic_evidence": {},
-      "unit_hint": "Google",
-      "first_seen": "2026-09-24T22:21:23+00:00"
-    },
-    {
       "company_id": "nvidia",
       "id": "JR2020802",
       "title": "Research Scientist - AI",
@@ -4777,19 +4695,6 @@
       "topic_evidence": {},
       "unit_hint": "",
       "first_seen": "2026-09-24T18:22:40+00:00"
-    },
-    {
-      "company_id": "google",
-      "id": "133466467944276678",
-      "title": "Research Scientist, Frontier AI, DeepMind",
-      "location": "Zürich, Switzerland",
-      "url": "https://www.google.com/about/careers/applications/jobs/results/133466467944276678-research-scientist-frontier-ai-deepmind",
-      "published_at": null,
-      "topics": [],
-      "role_family": "research",
-      "topic_evidence": {},
-      "unit_hint": "DeepMind",
-      "first_seen": "2026-09-24T22:21:23+00:00"
     },
     {
       "company_id": "nvidia",
@@ -5188,6 +5093,19 @@
       },
       "unit_hint": "",
       "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "google",
+      "id": "127510867649405638",
+      "title": "Semiconductor Material Science Research Scientist, DeepMind",
+      "location": "London, UK",
+      "url": "https://www.google.com/about/careers/applications/jobs/results/127510867649405638-semiconductor-material-science-research-scientist-deepmind",
+      "published_at": null,
+      "topics": [],
+      "role_family": "research",
+      "topic_evidence": {},
+      "unit_hint": "DeepMind",
+      "first_seen": "2026-09-26T19:13:36+00:00"
     },
     {
       "company_id": "google",
@@ -6259,6 +6177,62 @@
   ],
   "events": [
     {
+      "company_id": "anthropic",
+      "job_id": "5271380008",
+      "kind": "removed",
+      "title": "Research Engineer, Domain Scaling",
+      "occurred_at": "2026-09-26T19:13:40+00:00"
+    },
+    {
+      "company_id": "openai",
+      "job_id": "e1d8b590-8a91-42bb-ba2e-64b99c87e4ac",
+      "kind": "removed",
+      "title": "Applied AI Engineer, Codex",
+      "occurred_at": "2026-09-26T19:13:40+00:00"
+    },
+    {
+      "company_id": "microsoft",
+      "job_id": "1970393556985425",
+      "kind": "removed",
+      "title": "Applied AI Scientist II",
+      "occurred_at": "2026-09-26T19:13:39+00:00"
+    },
+    {
+      "company_id": "google",
+      "job_id": "136641397963793094",
+      "kind": "removed",
+      "title": "Audio to Audio Research Scientist, DeepMind",
+      "occurred_at": "2026-09-26T19:13:36+00:00"
+    },
+    {
+      "company_id": "google",
+      "job_id": "133517804614623942",
+      "kind": "removed",
+      "title": "Applied AI Engineer",
+      "occurred_at": "2026-09-26T19:13:36+00:00"
+    },
+    {
+      "company_id": "google",
+      "job_id": "133466467944276678",
+      "kind": "removed",
+      "title": "Research Scientist, Frontier AI, DeepMind",
+      "occurred_at": "2026-09-26T19:13:36+00:00"
+    },
+    {
+      "company_id": "google",
+      "job_id": "113097198995940038",
+      "kind": "removed",
+      "title": "Research Scientist",
+      "occurred_at": "2026-09-26T19:13:36+00:00"
+    },
+    {
+      "company_id": "google",
+      "job_id": "127510867649405638",
+      "kind": "new",
+      "title": "Semiconductor Material Science Research Scientist, DeepMind",
+      "occurred_at": "2026-09-26T19:13:36+00:00"
+    },
+    {
       "company_id": "microsoft",
       "job_id": "1970393557004677",
       "kind": "changed",
@@ -6330,6 +6304,14 @@
     }
   ],
   "papers": [
+    {
+      "company_id": "amazon",
+      "title": "CE-Agent: a cloud-edge collaborative agent framework with dynamic offloading and synergistic distillation",
+      "publication_date": "2026-09-25",
+      "url": "https://doi.org/10.1186/s13677-026-00984-5",
+      "citations": 0,
+      "first_seen": "2026-09-26T19:13:37+00:00"
+    },
     {
       "company_id": "nvidia",
       "title": "Accelerating Chemical Kinetics for Exoplanet Atmospheres Using Neural Networks",
