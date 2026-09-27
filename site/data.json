@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-26T19:13:41+00:00",
+  "generated_at": "2026-09-27T19:47:49+00:00",
   "method": "Public ATS APIs and OpenAlex; titles use rule-based topic tags. OpenAlex papers are candidates pending affiliation review.",
   "companies": [
     {
@@ -23,8 +23,8 @@
           "company_id": "nvidia",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-09-26T19:13:31+00:00",
-          "last_success": "2026-09-26T19:13:31+00:00",
+          "last_attempt": "2026-09-27T19:46:32+00:00",
+          "last_success": "2026-09-27T19:46:32+00:00",
           "item_count": 115,
           "error": null,
           "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite"
@@ -33,9 +33,9 @@
           "company_id": "nvidia",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-09-26T19:13:32+00:00",
-          "last_success": "2026-09-26T19:13:32+00:00",
-          "item_count": 5,
+          "last_attempt": "2026-09-27T19:46:33+00:00",
+          "last_success": "2026-09-27T19:46:33+00:00",
+          "item_count": 6,
           "error": null,
           "url": "https://openalex.org/"
         }
@@ -55,8 +55,8 @@
           "company_id": "meta",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-09-26T19:13:32+00:00",
-          "last_success": "2026-09-26T19:13:32+00:00",
+          "last_attempt": "2026-09-27T19:46:33+00:00",
+          "last_success": "2026-09-27T19:46:33+00:00",
           "item_count": 1,
           "error": null,
           "url": "https://openalex.org/"
@@ -78,8 +78,8 @@
           "company_id": "google",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-09-26T19:13:36+00:00",
-          "last_success": "2026-09-26T19:13:36+00:00",
+          "last_attempt": "2026-09-27T19:46:38+00:00",
+          "last_success": "2026-09-27T19:46:38+00:00",
           "item_count": 224,
           "error": null,
           "url": "https://www.google.com/about/careers/applications/jobs/results/?q=research+scientist"
@@ -88,8 +88,8 @@
           "company_id": "google",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-09-26T19:13:36+00:00",
-          "last_success": "2026-09-26T19:13:36+00:00",
+          "last_attempt": "2026-09-27T19:46:39+00:00",
+          "last_success": "2026-09-27T19:46:39+00:00",
           "item_count": 4,
           "error": null,
           "url": "https://openalex.org/"
@@ -110,9 +110,9 @@
           "company_id": "amazon",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-09-26T19:13:37+00:00",
-          "last_success": "2026-09-26T19:13:37+00:00",
-          "item_count": 6,
+          "last_attempt": "2026-09-27T19:46:39+00:00",
+          "last_success": "2026-09-27T19:46:39+00:00",
+          "item_count": 5,
           "error": null,
           "url": "https://openalex.org/"
         }
@@ -128,15 +128,15 @@
         "subset": "other",
         "scope": "targeted"
       },
-      "relevant_jobs": 34,
+      "relevant_jobs": 30,
       "sources": {
         "jobs": {
           "company_id": "microsoft",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-09-26T19:13:39+00:00",
-          "last_success": "2026-09-26T19:13:39+00:00",
-          "item_count": 48,
+          "last_attempt": "2026-09-27T19:47:46+00:00",
+          "last_success": "2026-09-27T19:47:46+00:00",
+          "item_count": 47,
           "error": null,
           "url": "https://apply.careers.microsoft.com/careers?query=researcher"
         },
@@ -144,8 +144,8 @@
           "company_id": "microsoft",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-09-26T19:13:39+00:00",
-          "last_success": "2026-09-26T19:13:39+00:00",
+          "last_attempt": "2026-09-27T19:47:47+00:00",
+          "last_success": "2026-09-27T19:47:47+00:00",
           "item_count": 6,
           "error": null,
           "url": "https://openalex.org/"
@@ -168,8 +168,8 @@
           "company_id": "msr",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-09-26T19:13:39+00:00",
-          "last_success": "2026-09-26T19:13:39+00:00",
+          "last_attempt": "2026-09-27T19:47:47+00:00",
+          "last_success": "2026-09-27T19:47:47+00:00",
           "item_count": 3,
           "error": null,
           "url": "https://apply.careers.microsoft.com/careers?query=researcher"
@@ -178,8 +178,8 @@
           "company_id": "msr",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-09-26T19:13:39+00:00",
-          "last_success": "2026-09-26T19:13:39+00:00",
+          "last_attempt": "2026-09-27T19:47:47+00:00",
+          "last_success": "2026-09-27T19:47:47+00:00",
           "item_count": 5,
           "error": null,
           "url": "https://openalex.org/"
@@ -200,8 +200,8 @@
           "company_id": "openai",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-09-26T19:13:40+00:00",
-          "last_success": "2026-09-26T19:13:40+00:00",
+          "last_attempt": "2026-09-27T19:47:48+00:00",
+          "last_success": "2026-09-27T19:47:48+00:00",
           "item_count": 830,
           "error": null,
           "url": "https://api.ashbyhq.com/posting-api/job-board/openai"
@@ -210,8 +210,8 @@
           "company_id": "openai",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-09-26T19:13:40+00:00",
-          "last_success": "2026-09-26T19:13:40+00:00",
+          "last_attempt": "2026-09-27T19:47:48+00:00",
+          "last_success": "2026-09-27T19:47:48+00:00",
           "item_count": 0,
           "error": null,
           "url": "https://openalex.org/"
@@ -232,9 +232,9 @@
           "company_id": "anthropic",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-09-26T19:13:40+00:00",
-          "last_success": "2026-09-26T19:13:40+00:00",
-          "item_count": 618,
+          "last_attempt": "2026-09-27T19:47:49+00:00",
+          "last_success": "2026-09-27T19:47:49+00:00",
+          "item_count": 619,
           "error": null,
           "url": "https://boards-api.greenhouse.io/v1/boards/anthropic/jobs?content=true"
         },
@@ -242,8 +242,8 @@
           "company_id": "anthropic",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-09-26T19:13:41+00:00",
-          "last_success": "2026-09-26T19:13:41+00:00",
+          "last_attempt": "2026-09-27T19:47:49+00:00",
+          "last_success": "2026-09-27T19:47:49+00:00",
           "item_count": 0,
           "error": null,
           "url": "https://openalex.org/"
@@ -264,8 +264,8 @@
           "company_id": "physical-intelligence",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-09-26T19:13:41+00:00",
-          "last_success": "2026-09-26T19:13:41+00:00",
+          "last_attempt": "2026-09-27T19:47:49+00:00",
+          "last_success": "2026-09-27T19:47:49+00:00",
           "item_count": 35,
           "error": null,
           "url": "https://api.ashbyhq.com/posting-api/job-board/physicalintelligence"
@@ -289,8 +289,8 @@
           "company_id": "skild-ai",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-09-26T19:13:41+00:00",
-          "last_success": "2026-09-26T19:13:41+00:00",
+          "last_attempt": "2026-09-27T19:47:49+00:00",
+          "last_success": "2026-09-27T19:47:49+00:00",
           "item_count": 46,
           "error": null,
           "url": "https://boards-api.greenhouse.io/v1/boards/skildai-careers/jobs?content=true"
@@ -545,19 +545,6 @@
       "first_seen": "2026-09-24T22:28:04+00:00"
     },
     {
-      "company_id": "microsoft",
-      "id": "1970393556999294",
-      "title": "Senior Researcher",
-      "location": "Redmond, WA, US; Seattle, WA, US",
-      "url": "https://apply.careers.microsoft.com/careers/job/1970393556999294",
-      "published_at": "2026-09-18T21:23:30+00:00",
-      "topics": [],
-      "role_family": "research",
-      "topic_evidence": {},
-      "unit_hint": "Research Sciences",
-      "first_seen": "2026-09-24T22:28:04+00:00"
-    },
-    {
       "company_id": "openai",
       "id": "7f76be3a-38d0-4ff4-b997-9f1672e78bc0",
       "title": "Forward Deployed Engineer (FDE), Financial Services- NYC ",
@@ -765,19 +752,6 @@
       "first_seen": "2026-09-24T18:14:22+00:00"
     },
     {
-      "company_id": "microsoft",
-      "id": "1970393556985593",
-      "title": "Security Researcher II",
-      "location": "Redmond, WA, US",
-      "url": "https://apply.careers.microsoft.com/careers/job/1970393556985593",
-      "published_at": "2026-09-11T17:19:50+00:00",
-      "topics": [],
-      "role_family": "research",
-      "topic_evidence": {},
-      "unit_hint": "Security Research",
-      "first_seen": "2026-09-24T22:28:04+00:00"
-    },
-    {
       "company_id": "openai",
       "id": "cc203d0d-96cd-4615-b5f1-3f25d6b08a95",
       "title": "Manager, Applied AI Engineering (Codex)",
@@ -841,19 +815,6 @@
       "topic_evidence": {},
       "unit_hint": "",
       "first_seen": "2026-09-24T18:14:20+00:00"
-    },
-    {
-      "company_id": "microsoft",
-      "id": "1970393556991722",
-      "title": "Principal Researcher",
-      "location": "Redmond, WA, US",
-      "url": "https://apply.careers.microsoft.com/careers/job/1970393556991722",
-      "published_at": "2026-09-10T18:17:33+00:00",
-      "topics": [],
-      "role_family": "research",
-      "topic_evidence": {},
-      "unit_hint": "Research Sciences",
-      "first_seen": "2026-09-24T22:28:04+00:00"
     },
     {
       "company_id": "anthropic",
@@ -953,19 +914,6 @@
       "topic_evidence": {},
       "unit_hint": "",
       "first_seen": "2026-09-24T18:14:20+00:00"
-    },
-    {
-      "company_id": "microsoft",
-      "id": "1970393556985260",
-      "title": "Senior Security Researcher",
-      "location": "Redmond, WA, US",
-      "url": "https://apply.careers.microsoft.com/careers/job/1970393556985260",
-      "published_at": "2026-09-08T23:43:14+00:00",
-      "topics": [],
-      "role_family": "research",
-      "topic_evidence": {},
-      "unit_hint": "Security Research",
-      "first_seen": "2026-09-24T22:28:04+00:00"
     },
     {
       "company_id": "openai",
@@ -6177,6 +6125,34 @@
   ],
   "events": [
     {
+      "company_id": "microsoft",
+      "job_id": "1970393556999294",
+      "kind": "removed",
+      "title": "Senior Researcher",
+      "occurred_at": "2026-09-27T19:47:46+00:00"
+    },
+    {
+      "company_id": "microsoft",
+      "job_id": "1970393556991722",
+      "kind": "removed",
+      "title": "Principal Researcher",
+      "occurred_at": "2026-09-27T19:47:46+00:00"
+    },
+    {
+      "company_id": "microsoft",
+      "job_id": "1970393556985593",
+      "kind": "removed",
+      "title": "Security Researcher II",
+      "occurred_at": "2026-09-27T19:47:46+00:00"
+    },
+    {
+      "company_id": "microsoft",
+      "job_id": "1970393556985260",
+      "kind": "removed",
+      "title": "Senior Security Researcher",
+      "occurred_at": "2026-09-27T19:47:46+00:00"
+    },
+    {
       "company_id": "anthropic",
       "job_id": "5271380008",
       "kind": "removed",
@@ -6304,6 +6280,30 @@
     }
   ],
   "papers": [
+    {
+      "company_id": "nvidia",
+      "title": "Beyond Track and Intensity: Scale-Dependent Diagnostics of a Tropical Cyclone Forecast by a Probabilistic AI Foundation Model, AERIS",
+      "publication_date": "2026-09-26",
+      "url": "https://doi.org/10.22541/essoar.15009485/v1",
+      "citations": 0,
+      "first_seen": "2026-09-27T19:46:33+00:00"
+    },
+    {
+      "company_id": "google",
+      "title": "Detecting H i Self-Absorption using Neural Networks",
+      "publication_date": "2026-09-26",
+      "url": "https://doi.org/10.1093/mnras/stag1853",
+      "citations": 0,
+      "first_seen": "2026-09-27T19:46:39+00:00"
+    },
+    {
+      "company_id": "amazon",
+      "title": "Graph Neural Network‐Based Reinforcement Learning for Decentralized Multi‐Robot Manipulation",
+      "publication_date": "2026-09-26",
+      "url": "https://doi.org/10.1002/aisy.70562",
+      "citations": 0,
+      "first_seen": "2026-09-27T19:46:39+00:00"
+    },
     {
       "company_id": "amazon",
       "title": "CE-Agent: a cloud-edge collaborative agent framework with dynamic offloading and synergistic distillation",
