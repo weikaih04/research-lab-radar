@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T21:05:55+00:00",
+  "generated_at": "2026-10-02T20:48:30+00:00",
   "method": "Public ATS APIs and OpenAlex; titles use rule-based topic tags. OpenAlex papers are candidates pending affiliation review.",
   "companies": [
     {
@@ -17,14 +17,14 @@
           "machine learning"
         ]
       },
-      "relevant_jobs": 63,
+      "relevant_jobs": 64,
       "sources": {
         "jobs": {
           "company_id": "nvidia",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-10-01T21:02:27+00:00",
-          "last_success": "2026-10-01T21:02:27+00:00",
+          "last_attempt": "2026-10-02T20:46:08+00:00",
+          "last_success": "2026-10-02T20:46:08+00:00",
           "item_count": 117,
           "error": null,
           "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite"
@@ -33,9 +33,9 @@
           "company_id": "nvidia",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-01T21:02:28+00:00",
-          "last_success": "2026-10-01T21:02:28+00:00",
-          "item_count": 4,
+          "last_attempt": "2026-10-02T20:46:08+00:00",
+          "last_success": "2026-10-02T20:46:08+00:00",
+          "item_count": 3,
           "error": null,
           "url": "https://openalex.org/"
         }
@@ -55,8 +55,8 @@
           "company_id": "meta",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-01T21:02:28+00:00",
-          "last_success": "2026-10-01T21:02:28+00:00",
+          "last_attempt": "2026-10-02T20:46:09+00:00",
+          "last_success": "2026-10-02T20:46:09+00:00",
           "item_count": 7,
           "error": null,
           "url": "https://openalex.org/"
@@ -72,15 +72,15 @@
         "query": "research scientist",
         "scope": "targeted"
       },
-      "relevant_jobs": 121,
+      "relevant_jobs": 122,
       "sources": {
         "jobs": {
           "company_id": "google",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-10-01T21:02:33+00:00",
-          "last_success": "2026-10-01T21:02:33+00:00",
-          "item_count": 249,
+          "last_attempt": "2026-10-02T20:46:14+00:00",
+          "last_success": "2026-10-02T20:46:14+00:00",
+          "item_count": 250,
           "error": null,
           "url": "https://www.google.com/about/careers/applications/jobs/results/?q=research+scientist"
         },
@@ -88,9 +88,9 @@
           "company_id": "google",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-01T21:02:33+00:00",
-          "last_success": "2026-10-01T21:02:33+00:00",
-          "item_count": 6,
+          "last_attempt": "2026-10-02T20:46:14+00:00",
+          "last_success": "2026-10-02T20:46:14+00:00",
+          "item_count": 9,
           "error": null,
           "url": "https://openalex.org/"
         }
@@ -110,9 +110,9 @@
           "company_id": "amazon",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-01T21:02:33+00:00",
-          "last_success": "2026-10-01T21:02:33+00:00",
-          "item_count": 2,
+          "last_attempt": "2026-10-02T20:46:14+00:00",
+          "last_success": "2026-10-02T20:46:14+00:00",
+          "item_count": 3,
           "error": null,
           "url": "https://openalex.org/"
         }
@@ -134,9 +134,9 @@
           "company_id": "microsoft",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-10-01T21:05:55+00:00",
-          "last_success": "2026-10-01T21:05:55+00:00",
-          "item_count": 54,
+          "last_attempt": "2026-10-02T20:48:28+00:00",
+          "last_success": "2026-10-02T20:48:28+00:00",
+          "item_count": 55,
           "error": null,
           "url": "https://apply.careers.microsoft.com/careers?query=researcher"
         },
@@ -144,9 +144,9 @@
           "company_id": "microsoft",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-01T21:04:45+00:00",
-          "last_success": "2026-10-01T21:04:45+00:00",
-          "item_count": 5,
+          "last_attempt": "2026-10-02T20:48:28+00:00",
+          "last_success": "2026-10-02T20:48:28+00:00",
+          "item_count": 3,
           "error": null,
           "url": "https://openalex.org/"
         }
@@ -168,8 +168,8 @@
           "company_id": "msr",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-10-01T21:05:53+00:00",
-          "last_success": "2026-10-01T21:05:53+00:00",
+          "last_attempt": "2026-10-02T20:48:28+00:00",
+          "last_success": "2026-10-02T20:48:28+00:00",
           "item_count": 3,
           "error": null,
           "url": "https://apply.careers.microsoft.com/careers?query=researcher"
@@ -178,9 +178,9 @@
           "company_id": "msr",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-01T21:05:53+00:00",
-          "last_success": "2026-10-01T21:05:53+00:00",
-          "item_count": 14,
+          "last_attempt": "2026-10-02T20:48:28+00:00",
+          "last_success": "2026-10-02T20:48:28+00:00",
+          "item_count": 15,
           "error": null,
           "url": "https://openalex.org/"
         }
@@ -194,15 +194,15 @@
         "type": "ashby",
         "token": "openai"
       },
-      "relevant_jobs": 111,
+      "relevant_jobs": 112,
       "sources": {
         "jobs": {
           "company_id": "openai",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-10-01T21:05:53+00:00",
-          "last_success": "2026-10-01T21:05:53+00:00",
-          "item_count": 836,
+          "last_attempt": "2026-10-02T20:48:29+00:00",
+          "last_success": "2026-10-02T20:48:29+00:00",
+          "item_count": 828,
           "error": null,
           "url": "https://api.ashbyhq.com/posting-api/job-board/openai"
         },
@@ -210,8 +210,8 @@
           "company_id": "openai",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-01T21:05:54+00:00",
-          "last_success": "2026-10-01T21:05:54+00:00",
+          "last_attempt": "2026-10-02T20:48:29+00:00",
+          "last_success": "2026-10-02T20:48:29+00:00",
           "item_count": 0,
           "error": null,
           "url": "https://openalex.org/"
@@ -232,9 +232,9 @@
           "company_id": "anthropic",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-10-01T21:05:54+00:00",
-          "last_success": "2026-10-01T21:05:54+00:00",
-          "item_count": 637,
+          "last_attempt": "2026-10-02T20:48:29+00:00",
+          "last_success": "2026-10-02T20:48:29+00:00",
+          "item_count": 639,
           "error": null,
           "url": "https://boards-api.greenhouse.io/v1/boards/anthropic/jobs?content=true"
         },
@@ -242,8 +242,8 @@
           "company_id": "anthropic",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-01T21:05:54+00:00",
-          "last_success": "2026-10-01T21:05:54+00:00",
+          "last_attempt": "2026-10-02T20:48:29+00:00",
+          "last_success": "2026-10-02T20:48:29+00:00",
           "item_count": 0,
           "error": null,
           "url": "https://openalex.org/"
@@ -264,9 +264,9 @@
           "company_id": "physical-intelligence",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-10-01T21:05:54+00:00",
-          "last_success": "2026-10-01T21:05:54+00:00",
-          "item_count": 35,
+          "last_attempt": "2026-10-02T20:48:29+00:00",
+          "last_success": "2026-10-02T20:48:29+00:00",
+          "item_count": 34,
           "error": null,
           "url": "https://api.ashbyhq.com/posting-api/job-board/physicalintelligence"
         },
@@ -289,8 +289,8 @@
           "company_id": "skild-ai",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-10-01T21:05:55+00:00",
-          "last_success": "2026-10-01T21:05:55+00:00",
+          "last_attempt": "2026-10-02T20:48:30+00:00",
+          "last_success": "2026-10-02T20:48:30+00:00",
           "item_count": 46,
           "error": null,
           "url": "https://boards-api.greenhouse.io/v1/boards/skildai-careers/jobs?content=true"
@@ -302,6 +302,49 @@
     }
   ],
   "jobs": [
+    {
+      "company_id": "microsoft",
+      "id": "1970393557022501",
+      "title": "Security Researcher",
+      "location": "Redmond, WA, US",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393557022501",
+      "published_at": "2026-10-02T18:55:40+00:00",
+      "topics": [],
+      "role_family": "research",
+      "topic_evidence": {},
+      "unit_hint": "Security Research",
+      "first_seen": "2026-10-02T20:48:28+00:00"
+    },
+    {
+      "company_id": "anthropic",
+      "id": "5442680008",
+      "title": "Staff Research Engineer, Multi-Agent Scaling",
+      "location": "San Francisco, CA | New York City, NY | Seattle, WA",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5442680008",
+      "published_at": "2026-10-02T15:26:52-04:00",
+      "topics": [
+        "Agents"
+      ],
+      "role_family": "research_engineering",
+      "topic_evidence": {
+        "Agents": "Agent"
+      },
+      "unit_hint": "",
+      "first_seen": "2026-10-02T20:48:29+00:00"
+    },
+    {
+      "company_id": "openai",
+      "id": "15ff9f15-c986-4ac3-ac2e-cd0f029afbd5",
+      "title": "Forward Deployed Engineer - Singapore (Korean Speaking)",
+      "location": "Singapore",
+      "url": "https://jobs.ashbyhq.com/openai/15ff9f15-c986-4ac3-ac2e-cd0f029afbd5",
+      "published_at": "2026-10-01T21:30:56.256+00:00",
+      "topics": [],
+      "role_family": "ai_engineering",
+      "topic_evidence": {},
+      "unit_hint": "",
+      "first_seen": "2026-10-02T20:48:29+00:00"
+    },
     {
       "company_id": "msr",
       "id": "1970393556982899",
@@ -409,19 +452,6 @@
       },
       "unit_hint": "",
       "first_seen": "2026-09-29T20:48:31+00:00"
-    },
-    {
-      "company_id": "microsoft",
-      "id": "1970393556985425",
-      "title": "Applied AI Scientist II",
-      "location": "Bengaluru, KA, IN",
-      "url": "https://apply.careers.microsoft.com/careers/job/1970393556985425",
-      "published_at": "2026-09-29T10:01:22+00:00",
-      "topics": [],
-      "role_family": "research",
-      "topic_evidence": {},
-      "unit_hint": "Applied Sciences",
-      "first_seen": "2026-09-24T22:28:04+00:00"
     },
     {
       "company_id": "microsoft",
@@ -1190,19 +1220,6 @@
       "topic_evidence": {},
       "unit_hint": "",
       "first_seen": "2026-09-24T18:14:20+00:00"
-    },
-    {
-      "company_id": "anthropic",
-      "id": "5416882008",
-      "title": "Research Engineer, Takeoff Intel",
-      "location": "Remote-Friendly (Travel Required) | San Francisco, CA",
-      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5416882008",
-      "published_at": "2026-09-08T13:00:27-04:00",
-      "topics": [],
-      "role_family": "research_engineering",
-      "topic_evidence": {},
-      "unit_hint": "",
-      "first_seen": "2026-09-24T18:14:22+00:00"
     },
     {
       "company_id": "openai",
@@ -4780,6 +4797,19 @@
     },
     {
       "company_id": "nvidia",
+      "id": "JR2012698",
+      "title": "Research Scientist, Fundamental Generative AI - New College Grad 2026",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Research-Scientist--Fundamental-Generative-AI---New-College-Grad-2026_JR2012698",
+      "published_at": null,
+      "topics": [],
+      "role_family": "research",
+      "topic_evidence": {},
+      "unit_hint": "",
+      "first_seen": "2026-09-24T18:22:40+00:00"
+    },
+    {
+      "company_id": "nvidia",
       "id": "JR2026739",
       "title": "Research Scientist, Fundamental Generative AI - New College Grad 2026",
       "location": "US, CA, Santa Clara",
@@ -4878,6 +4908,19 @@
       "topic_evidence": {},
       "unit_hint": "Google",
       "first_seen": "2026-09-24T22:21:23+00:00"
+    },
+    {
+      "company_id": "google",
+      "id": "86603243332739782",
+      "title": "Research Scientist, Google Research",
+      "location": "Mountain View, CA, USA",
+      "url": "https://www.google.com/about/careers/applications/jobs/results/86603243332739782-research-scientist-google-research",
+      "published_at": null,
+      "topics": [],
+      "role_family": "research",
+      "topic_evidence": {},
+      "unit_hint": "Google",
+      "first_seen": "2026-10-02T20:46:14+00:00"
     },
     {
       "company_id": "google",
@@ -6430,6 +6473,55 @@
   "events": [
     {
       "company_id": "anthropic",
+      "job_id": "5416882008",
+      "kind": "removed",
+      "title": "Research Engineer, Takeoff Intel",
+      "occurred_at": "2026-10-02T20:48:29+00:00"
+    },
+    {
+      "company_id": "anthropic",
+      "job_id": "5442680008",
+      "kind": "new",
+      "title": "Staff Research Engineer, Multi-Agent Scaling",
+      "occurred_at": "2026-10-02T20:48:29+00:00"
+    },
+    {
+      "company_id": "openai",
+      "job_id": "15ff9f15-c986-4ac3-ac2e-cd0f029afbd5",
+      "kind": "new",
+      "title": "Forward Deployed Engineer - Singapore (Korean Speaking)",
+      "occurred_at": "2026-10-02T20:48:29+00:00"
+    },
+    {
+      "company_id": "microsoft",
+      "job_id": "1970393556985425",
+      "kind": "removed",
+      "title": "Applied AI Scientist II",
+      "occurred_at": "2026-10-02T20:48:28+00:00"
+    },
+    {
+      "company_id": "microsoft",
+      "job_id": "1970393557022501",
+      "kind": "new",
+      "title": "Security Researcher",
+      "occurred_at": "2026-10-02T20:48:28+00:00"
+    },
+    {
+      "company_id": "google",
+      "job_id": "86603243332739782",
+      "kind": "new",
+      "title": "Research Scientist, Google Research",
+      "occurred_at": "2026-10-02T20:46:14+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "job_id": "JR2012698",
+      "kind": "reopened",
+      "title": "Research Scientist, Fundamental Generative AI - New College Grad 2026",
+      "occurred_at": "2026-10-02T20:46:08+00:00"
+    },
+    {
+      "company_id": "anthropic",
       "job_id": "5061517008",
       "kind": "removed",
       "title": "Research Engineer, Universes",
@@ -7124,6 +7216,46 @@
   ],
   "papers": [
     {
+      "company_id": "google",
+      "title": "Automated Modernization of Machine Learning Engineering Notebooks for Reproducibility",
+      "publication_date": "2026-10-01",
+      "url": "https://doi.org/10.1145/3832166",
+      "citations": 0,
+      "first_seen": "2026-10-02T20:46:14+00:00"
+    },
+    {
+      "company_id": "google",
+      "title": "Denario Project: Deep Knowledge Artificial Intelligence Agents for Scientific Discovery",
+      "publication_date": "2026-10-01",
+      "url": "https://doi.org/10.1103/kk55-gc95",
+      "citations": 0,
+      "first_seen": "2026-10-02T20:46:14+00:00"
+    },
+    {
+      "company_id": "google",
+      "title": "Bridging Machine Learning and Algorithmic Information Theory, Part VII: Algorithmic Information Kernels and Kernel Discrepancies on Countable Spaces",
+      "publication_date": "2026-10-01",
+      "url": "https://doi.org/10.3390/e28101084",
+      "citations": 0,
+      "first_seen": "2026-10-02T20:46:14+00:00"
+    },
+    {
+      "company_id": "amazon",
+      "title": "LLMutantKiller: Using Large Language Models to Generate Tests That Kill Mutants",
+      "publication_date": "2026-10-01",
+      "url": "https://doi.org/10.1145/3832098",
+      "citations": 0,
+      "first_seen": "2026-10-02T20:46:14+00:00"
+    },
+    {
+      "company_id": "msr",
+      "title": "Replanning human–robot collaborative tasks with vision–language models via semantic and physical dual–correction",
+      "publication_date": "2026-10-01",
+      "url": "https://doi.org/10.1080/01691864.2026.2732745",
+      "citations": 0,
+      "first_seen": "2026-10-02T20:48:28+00:00"
+    },
+    {
       "company_id": "amazon",
       "title": "A Fine-Grained Benchmark for Ophthalmic Foundation Models with Point-Based Classification and Retrieval",
       "publication_date": "2026-09-30",
@@ -7288,7 +7420,7 @@
       "title": "Bringing Everyone to the Table: An Experimental Study of LLM-Facilitated Group Decision Making",
       "publication_date": "2026-09-23",
       "url": "https://doi.org/10.1145/3816907",
-      "citations": 1,
+      "citations": 2,
       "first_seen": "2026-09-24T18:14:19+00:00"
     },
     {
