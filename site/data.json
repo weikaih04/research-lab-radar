@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-10T20:04:56+00:00",
+  "generated_at": "2026-10-11T20:19:39+00:00",
   "method": "Public ATS APIs and OpenAlex; titles use rule-based topic tags. OpenAlex papers are candidates pending affiliation review.",
   "companies": [
     {
@@ -23,8 +23,8 @@
           "company_id": "nvidia",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-10-10T20:04:46+00:00",
-          "last_success": "2026-10-10T20:04:46+00:00",
+          "last_attempt": "2026-10-11T20:18:24+00:00",
+          "last_success": "2026-10-11T20:18:24+00:00",
           "item_count": 116,
           "error": null,
           "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite"
@@ -33,9 +33,9 @@
           "company_id": "nvidia",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-10T20:04:47+00:00",
-          "last_success": "2026-10-10T20:04:47+00:00",
-          "item_count": 9,
+          "last_attempt": "2026-10-11T20:18:24+00:00",
+          "last_success": "2026-10-11T20:18:24+00:00",
+          "item_count": 8,
           "error": null,
           "url": "https://openalex.org/"
         }
@@ -55,9 +55,9 @@
           "company_id": "meta",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-10T20:04:47+00:00",
-          "last_success": "2026-10-10T20:04:47+00:00",
-          "item_count": 7,
+          "last_attempt": "2026-10-11T20:18:24+00:00",
+          "last_success": "2026-10-11T20:18:24+00:00",
+          "item_count": 5,
           "error": null,
           "url": "https://openalex.org/"
         }
@@ -78,8 +78,8 @@
           "company_id": "google",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-10-10T20:04:51+00:00",
-          "last_success": "2026-10-10T20:04:51+00:00",
+          "last_attempt": "2026-10-11T20:18:29+00:00",
+          "last_success": "2026-10-11T20:18:29+00:00",
           "item_count": 246,
           "error": null,
           "url": "https://www.google.com/about/careers/applications/jobs/results/?q=research+scientist"
@@ -88,8 +88,8 @@
           "company_id": "google",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-10T20:04:51+00:00",
-          "last_success": "2026-10-10T20:04:51+00:00",
+          "last_attempt": "2026-10-11T20:18:29+00:00",
+          "last_success": "2026-10-11T20:18:29+00:00",
           "item_count": 12,
           "error": null,
           "url": "https://openalex.org/"
@@ -110,9 +110,9 @@
           "company_id": "amazon",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-10T20:04:52+00:00",
-          "last_success": "2026-10-10T20:04:52+00:00",
-          "item_count": 9,
+          "last_attempt": "2026-10-11T20:18:29+00:00",
+          "last_success": "2026-10-11T20:18:29+00:00",
+          "item_count": 11,
           "error": null,
           "url": "https://openalex.org/"
         }
@@ -134,9 +134,9 @@
           "company_id": "microsoft",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-10-10T20:04:55+00:00",
-          "last_success": "2026-10-10T20:04:55+00:00",
-          "item_count": 54,
+          "last_attempt": "2026-10-11T20:19:37+00:00",
+          "last_success": "2026-10-11T20:19:37+00:00",
+          "item_count": 56,
           "error": null,
           "url": "https://apply.careers.microsoft.com/careers?query=researcher"
         },
@@ -144,9 +144,9 @@
           "company_id": "microsoft",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-10T20:04:55+00:00",
-          "last_success": "2026-10-10T20:04:55+00:00",
-          "item_count": 5,
+          "last_attempt": "2026-10-11T20:19:38+00:00",
+          "last_success": "2026-10-11T20:19:38+00:00",
+          "item_count": 6,
           "error": null,
           "url": "https://openalex.org/"
         }
@@ -162,14 +162,14 @@
         "subset": "msr",
         "scope": "targeted"
       },
-      "relevant_jobs": 3,
+      "relevant_jobs": 2,
       "sources": {
         "jobs": {
           "company_id": "msr",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-10-10T20:04:55+00:00",
-          "last_success": "2026-10-10T20:04:55+00:00",
+          "last_attempt": "2026-10-11T20:19:38+00:00",
+          "last_success": "2026-10-11T20:19:38+00:00",
           "item_count": 2,
           "error": null,
           "url": "https://apply.careers.microsoft.com/careers?query=researcher"
@@ -178,9 +178,9 @@
           "company_id": "msr",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-10T20:04:55+00:00",
-          "last_success": "2026-10-10T20:04:55+00:00",
-          "item_count": 16,
+          "last_attempt": "2026-10-11T20:19:38+00:00",
+          "last_success": "2026-10-11T20:19:38+00:00",
+          "item_count": 15,
           "error": null,
           "url": "https://openalex.org/"
         }
@@ -200,8 +200,8 @@
           "company_id": "openai",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-10-10T20:04:56+00:00",
-          "last_success": "2026-10-10T20:04:56+00:00",
+          "last_attempt": "2026-10-11T20:19:38+00:00",
+          "last_success": "2026-10-11T20:19:38+00:00",
           "item_count": 815,
           "error": null,
           "url": "https://api.ashbyhq.com/posting-api/job-board/openai"
@@ -210,8 +210,8 @@
           "company_id": "openai",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-10T20:04:56+00:00",
-          "last_success": "2026-10-10T20:04:56+00:00",
+          "last_attempt": "2026-10-11T20:19:38+00:00",
+          "last_success": "2026-10-11T20:19:38+00:00",
           "item_count": 0,
           "error": null,
           "url": "https://openalex.org/"
@@ -232,8 +232,8 @@
           "company_id": "anthropic",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-10-10T20:04:56+00:00",
-          "last_success": "2026-10-10T20:04:56+00:00",
+          "last_attempt": "2026-10-11T20:19:39+00:00",
+          "last_success": "2026-10-11T20:19:39+00:00",
           "item_count": 645,
           "error": null,
           "url": "https://boards-api.greenhouse.io/v1/boards/anthropic/jobs?content=true"
@@ -242,8 +242,8 @@
           "company_id": "anthropic",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-10T20:04:56+00:00",
-          "last_success": "2026-10-10T20:04:56+00:00",
+          "last_attempt": "2026-10-11T20:19:39+00:00",
+          "last_success": "2026-10-11T20:19:39+00:00",
           "item_count": 0,
           "error": null,
           "url": "https://openalex.org/"
@@ -264,8 +264,8 @@
           "company_id": "physical-intelligence",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-10-10T20:04:56+00:00",
-          "last_success": "2026-10-10T20:04:56+00:00",
+          "last_attempt": "2026-10-11T20:19:39+00:00",
+          "last_success": "2026-10-11T20:19:39+00:00",
           "item_count": 38,
           "error": null,
           "url": "https://api.ashbyhq.com/posting-api/job-board/physicalintelligence"
@@ -289,8 +289,8 @@
           "company_id": "skild-ai",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-10-10T20:04:56+00:00",
-          "last_success": "2026-10-10T20:04:56+00:00",
+          "last_attempt": "2026-10-11T20:19:39+00:00",
+          "last_success": "2026-10-11T20:19:39+00:00",
           "item_count": 47,
           "error": null,
           "url": "https://boards-api.greenhouse.io/v1/boards/skildai-careers/jobs?content=true"
@@ -302,6 +302,19 @@
     }
   ],
   "jobs": [
+    {
+      "company_id": "microsoft",
+      "id": "1970393556994920",
+      "title": "Applied Scientist",
+      "location": "Beijing, Beijing, CN; Suzhou, Jiangsu, CN",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393556994920",
+      "published_at": "2026-10-11T07:21:20+00:00",
+      "topics": [],
+      "role_family": "research",
+      "topic_evidence": {},
+      "unit_hint": "Applied Sciences",
+      "first_seen": "2026-09-24T22:28:04+00:00"
+    },
     {
       "company_id": "physical-intelligence",
       "id": "14586c10-d913-43c5-8f7c-c77b5c438e4c",
@@ -474,19 +487,6 @@
       "topic_evidence": {},
       "unit_hint": "Security Research",
       "first_seen": "2026-10-08T21:20:56+00:00"
-    },
-    {
-      "company_id": "microsoft",
-      "id": "1970393556918610",
-      "title": "Senior Machine Learning Research Engineer - Research Engineering - MSR Cambridge",
-      "location": "Cambridge, England, GB",
-      "url": "https://apply.careers.microsoft.com/careers/job/1970393556918610",
-      "published_at": "2026-10-07T11:59:26+00:00",
-      "topics": [],
-      "role_family": "research_engineering",
-      "topic_evidence": {},
-      "unit_hint": "Research Sciences",
-      "first_seen": "2026-10-07T21:20:17+00:00"
     },
     {
       "company_id": "anthropic",
@@ -686,19 +686,6 @@
       "topic_evidence": {},
       "unit_hint": "Security Research",
       "first_seen": "2026-10-07T21:20:17+00:00"
-    },
-    {
-      "company_id": "msr",
-      "id": "1970393556982899",
-      "title": "Senior Researcher - AI Systems - Microsoft Research",
-      "location": "Cambridge, England, GB",
-      "url": "https://apply.careers.microsoft.com/careers/job/1970393556982899",
-      "published_at": "2026-10-01T09:43:50+00:00",
-      "topics": [],
-      "role_family": "research",
-      "topic_evidence": {},
-      "unit_hint": "Research Sciences",
-      "first_seen": "2026-09-24T22:24:40+00:00"
     },
     {
       "company_id": "microsoft",
@@ -6434,6 +6421,27 @@
   ],
   "events": [
     {
+      "company_id": "msr",
+      "job_id": "1970393556982899",
+      "kind": "removed",
+      "title": "Senior Researcher - AI Systems - Microsoft Research",
+      "occurred_at": "2026-10-11T20:19:38+00:00"
+    },
+    {
+      "company_id": "microsoft",
+      "job_id": "1970393556918610",
+      "kind": "removed",
+      "title": "Senior Machine Learning Research Engineer - Research Engineering - MSR Cambridge",
+      "occurred_at": "2026-10-11T20:19:37+00:00"
+    },
+    {
+      "company_id": "microsoft",
+      "job_id": "1970393556994920",
+      "kind": "reopened",
+      "title": "Applied Scientist",
+      "occurred_at": "2026-10-11T20:19:37+00:00"
+    },
+    {
       "company_id": "physical-intelligence",
       "job_id": "14586c10-d913-43c5-8f7c-c77b5c438e4c",
       "kind": "changed",
@@ -8171,12 +8179,60 @@
       "first_seen": "2026-10-10T20:04:51+00:00"
     },
     {
+      "company_id": "amazon",
+      "title": "AECP: Artifact-Exclusive Communication Protocol for Multi-Agent Code Generation",
+      "publication_date": "2026-10-05",
+      "url": "https://doi.org/10.48550/arxiv.2610.06481",
+      "citations": 0,
+      "first_seen": "2026-10-11T20:18:29+00:00"
+    },
+    {
+      "company_id": "microsoft",
+      "title": "Capability-Driven Self-Evolution of Agent Memory",
+      "publication_date": "2026-10-05",
+      "url": "https://doi.org/10.48550/arxiv.2610.06361",
+      "citations": 0,
+      "first_seen": "2026-10-11T20:19:38+00:00"
+    },
+    {
+      "company_id": "microsoft",
+      "title": "AuraSE: Low-Hallucination Generative Speech Enhancement via Multimodal Flow Matching and Inference Policy Optimization",
+      "publication_date": "2026-10-05",
+      "url": "https://doi.org/10.48550/arxiv.2610.06632",
+      "citations": 0,
+      "first_seen": "2026-10-11T20:19:38+00:00"
+    },
+    {
+      "company_id": "microsoft",
+      "title": "Mining Agent Skills from Production Traces",
+      "publication_date": "2026-10-05",
+      "url": "https://doi.org/10.48550/arxiv.2610.05777",
+      "citations": 0,
+      "first_seen": "2026-10-11T20:19:38+00:00"
+    },
+    {
+      "company_id": "amazon",
+      "title": "VERA: Verdict-Conditioned Reliability for Adaptive LLM Judges",
+      "publication_date": "2026-10-04",
+      "url": "https://doi.org/10.48550/arxiv.2610.05452",
+      "citations": 0,
+      "first_seen": "2026-10-11T20:18:29+00:00"
+    },
+    {
       "company_id": "nvidia",
       "title": "Self-Reflection Fine-Tuning: Enhancing Agent Security against Prompt Injection Attacks from Failure Experience",
       "publication_date": "2026-10-03",
       "url": "https://doi.org/10.48550/arxiv.2610.04269",
       "citations": 0,
       "first_seen": "2026-10-10T20:04:47+00:00"
+    },
+    {
+      "company_id": "google",
+      "title": "TimeNet: An Extensible Unified Data Infrastructure for Next-Generation Temporal Foundation Models",
+      "publication_date": "2026-10-03",
+      "url": "https://doi.org/10.48550/arxiv.2610.04407",
+      "citations": 0,
+      "first_seen": "2026-10-11T20:18:29+00:00"
     },
     {
       "company_id": "microsoft",
