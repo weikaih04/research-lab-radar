@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T23:01:35+00:00",
+  "generated_at": "2026-10-13T21:22:43+00:00",
   "method": "Public ATS APIs and OpenAlex; titles use rule-based topic tags. OpenAlex papers are candidates pending affiliation review.",
   "companies": [
     {
@@ -23,8 +23,8 @@
           "company_id": "nvidia",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-10-12T23:00:14+00:00",
-          "last_success": "2026-10-12T23:00:14+00:00",
+          "last_attempt": "2026-10-13T21:15:57+00:00",
+          "last_success": "2026-10-13T21:15:57+00:00",
           "item_count": 116,
           "error": null,
           "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite"
@@ -33,8 +33,8 @@
           "company_id": "nvidia",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-12T23:00:14+00:00",
-          "last_success": "2026-10-12T23:00:14+00:00",
+          "last_attempt": "2026-10-13T21:15:58+00:00",
+          "last_success": "2026-10-13T21:15:58+00:00",
           "item_count": 8,
           "error": null,
           "url": "https://openalex.org/"
@@ -55,9 +55,9 @@
           "company_id": "meta",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-12T23:00:14+00:00",
-          "last_success": "2026-10-12T23:00:14+00:00",
-          "item_count": 7,
+          "last_attempt": "2026-10-13T21:15:58+00:00",
+          "last_success": "2026-10-13T21:15:58+00:00",
+          "item_count": 5,
           "error": null,
           "url": "https://openalex.org/"
         }
@@ -72,15 +72,15 @@
         "query": "research scientist",
         "scope": "targeted"
       },
-      "relevant_jobs": 124,
+      "relevant_jobs": 123,
       "sources": {
         "jobs": {
           "company_id": "google",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-10-12T23:00:20+00:00",
-          "last_success": "2026-10-12T23:00:20+00:00",
-          "item_count": 251,
+          "last_attempt": "2026-10-13T21:16:03+00:00",
+          "last_success": "2026-10-13T21:16:03+00:00",
+          "item_count": 260,
           "error": null,
           "url": "https://www.google.com/about/careers/applications/jobs/results/?q=research+scientist"
         },
@@ -88,9 +88,9 @@
           "company_id": "google",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-12T23:00:20+00:00",
-          "last_success": "2026-10-12T23:00:20+00:00",
-          "item_count": 12,
+          "last_attempt": "2026-10-13T21:16:03+00:00",
+          "last_success": "2026-10-13T21:16:03+00:00",
+          "item_count": 13,
           "error": null,
           "url": "https://openalex.org/"
         }
@@ -110,9 +110,9 @@
           "company_id": "amazon",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-12T23:00:21+00:00",
-          "last_success": "2026-10-12T23:00:21+00:00",
-          "item_count": 12,
+          "last_attempt": "2026-10-13T21:16:03+00:00",
+          "last_success": "2026-10-13T21:16:03+00:00",
+          "item_count": 9,
           "error": null,
           "url": "https://openalex.org/"
         }
@@ -128,25 +128,25 @@
         "subset": "other",
         "scope": "targeted"
       },
-      "relevant_jobs": 37,
+      "relevant_jobs": 40,
       "sources": {
         "jobs": {
           "company_id": "microsoft",
           "kind": "jobs",
-          "status": "error",
-          "last_attempt": "2026-10-12T23:01:30+00:00",
-          "last_success": "2026-10-11T20:19:37+00:00",
-          "item_count": 56,
-          "error": "Microsoft Careers pagination ended before reported count",
+          "status": "ok",
+          "last_attempt": "2026-10-13T21:22:43+00:00",
+          "last_success": "2026-10-13T21:22:43+00:00",
+          "item_count": 58,
+          "error": null,
           "url": "https://apply.careers.microsoft.com/careers?query=researcher"
         },
         "papers": {
           "company_id": "microsoft",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-12T23:01:31+00:00",
-          "last_success": "2026-10-12T23:01:31+00:00",
-          "item_count": 5,
+          "last_attempt": "2026-10-13T21:18:16+00:00",
+          "last_success": "2026-10-13T21:18:16+00:00",
+          "item_count": 7,
           "error": null,
           "url": "https://openalex.org/"
         }
@@ -162,25 +162,25 @@
         "subset": "msr",
         "scope": "targeted"
       },
-      "relevant_jobs": 2,
+      "relevant_jobs": 3,
       "sources": {
         "jobs": {
           "company_id": "msr",
           "kind": "jobs",
-          "status": "error",
-          "last_attempt": "2026-10-12T23:01:33+00:00",
-          "last_success": "2026-10-11T20:19:38+00:00",
-          "item_count": 2,
-          "error": "Microsoft Careers pagination ended before reported count",
+          "status": "ok",
+          "last_attempt": "2026-10-13T21:22:41+00:00",
+          "last_success": "2026-10-13T21:22:41+00:00",
+          "item_count": 3,
+          "error": null,
           "url": "https://apply.careers.microsoft.com/careers?query=researcher"
         },
         "papers": {
           "company_id": "msr",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-12T23:01:33+00:00",
-          "last_success": "2026-10-12T23:01:33+00:00",
-          "item_count": 15,
+          "last_attempt": "2026-10-13T21:22:42+00:00",
+          "last_success": "2026-10-13T21:22:42+00:00",
+          "item_count": 16,
           "error": null,
           "url": "https://openalex.org/"
         }
@@ -194,15 +194,15 @@
         "type": "ashby",
         "token": "openai"
       },
-      "relevant_jobs": 110,
+      "relevant_jobs": 112,
       "sources": {
         "jobs": {
           "company_id": "openai",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-10-12T23:01:34+00:00",
-          "last_success": "2026-10-12T23:01:34+00:00",
-          "item_count": 809,
+          "last_attempt": "2026-10-13T21:22:42+00:00",
+          "last_success": "2026-10-13T21:22:42+00:00",
+          "item_count": 805,
           "error": null,
           "url": "https://api.ashbyhq.com/posting-api/job-board/openai"
         },
@@ -210,8 +210,8 @@
           "company_id": "openai",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-12T23:01:34+00:00",
-          "last_success": "2026-10-12T23:01:34+00:00",
+          "last_attempt": "2026-10-13T21:22:42+00:00",
+          "last_success": "2026-10-13T21:22:42+00:00",
           "item_count": 0,
           "error": null,
           "url": "https://openalex.org/"
@@ -226,15 +226,15 @@
         "type": "greenhouse",
         "token": "anthropic"
       },
-      "relevant_jobs": 78,
+      "relevant_jobs": 81,
       "sources": {
         "jobs": {
           "company_id": "anthropic",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-10-12T23:01:34+00:00",
-          "last_success": "2026-10-12T23:01:34+00:00",
-          "item_count": 646,
+          "last_attempt": "2026-10-13T21:22:43+00:00",
+          "last_success": "2026-10-13T21:22:43+00:00",
+          "item_count": 647,
           "error": null,
           "url": "https://boards-api.greenhouse.io/v1/boards/anthropic/jobs?content=true"
         },
@@ -242,8 +242,8 @@
           "company_id": "anthropic",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-12T23:01:35+00:00",
-          "last_success": "2026-10-12T23:01:35+00:00",
+          "last_attempt": "2026-10-13T21:22:43+00:00",
+          "last_success": "2026-10-13T21:22:43+00:00",
           "item_count": 0,
           "error": null,
           "url": "https://openalex.org/"
@@ -264,9 +264,9 @@
           "company_id": "physical-intelligence",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-10-12T23:01:35+00:00",
-          "last_success": "2026-10-12T23:01:35+00:00",
-          "item_count": 41,
+          "last_attempt": "2026-10-13T21:22:43+00:00",
+          "last_success": "2026-10-13T21:22:43+00:00",
+          "item_count": 38,
           "error": null,
           "url": "https://api.ashbyhq.com/posting-api/job-board/physicalintelligence"
         },
@@ -289,8 +289,8 @@
           "company_id": "skild-ai",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-10-12T23:01:35+00:00",
-          "last_success": "2026-10-12T23:01:35+00:00",
+          "last_attempt": "2026-10-13T21:22:43+00:00",
+          "last_success": "2026-10-13T21:22:43+00:00",
           "item_count": 47,
           "error": null,
           "url": "https://boards-api.greenhouse.io/v1/boards/skildai-careers/jobs?content=true"
@@ -302,6 +302,110 @@
     }
   ],
   "jobs": [
+    {
+      "company_id": "openai",
+      "id": "d039c0ef-ab36-4d40-bc5e-5c70295b2eb7",
+      "title": "Applied AI Engineer, Digital Natives",
+      "location": "Munich, Germany",
+      "url": "https://jobs.ashbyhq.com/openai/d039c0ef-ab36-4d40-bc5e-5c70295b2eb7",
+      "published_at": "2026-10-13T17:54:12.732+00:00",
+      "topics": [],
+      "role_family": "ai_engineering",
+      "topic_evidence": {},
+      "unit_hint": "",
+      "first_seen": "2026-10-13T21:22:42+00:00"
+    },
+    {
+      "company_id": "openai",
+      "id": "a01fc9ed-de08-4326-9206-4ee3f08000dc",
+      "title": "Machine Learning Engineer, Implicit Signals",
+      "location": "San Francisco",
+      "url": "https://jobs.ashbyhq.com/openai/a01fc9ed-de08-4326-9206-4ee3f08000dc",
+      "published_at": "2026-10-13T17:24:19.213+00:00",
+      "topics": [],
+      "role_family": "ai_engineering",
+      "topic_evidence": {},
+      "unit_hint": "",
+      "first_seen": "2026-10-13T21:22:42+00:00"
+    },
+    {
+      "company_id": "openai",
+      "id": "70042d81-4db6-4c5c-bdb2-76c133ee2917",
+      "title": "Machine Learning Engineer, Growth",
+      "location": "San Francisco",
+      "url": "https://jobs.ashbyhq.com/openai/70042d81-4db6-4c5c-bdb2-76c133ee2917",
+      "published_at": "2026-10-13T15:28:58.372+00:00",
+      "topics": [],
+      "role_family": "ai_engineering",
+      "topic_evidence": {},
+      "unit_hint": "",
+      "first_seen": "2026-10-13T21:22:42+00:00"
+    },
+    {
+      "company_id": "msr",
+      "id": "1970393556982899",
+      "title": "Senior Researcher - AI Systems - Microsoft Research",
+      "location": "Cambridge, England, GB",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393556982899",
+      "published_at": "2026-10-13T14:18:05+00:00",
+      "topics": [],
+      "role_family": "research",
+      "topic_evidence": {},
+      "unit_hint": "Research Sciences",
+      "first_seen": "2026-09-24T22:24:40+00:00"
+    },
+    {
+      "company_id": "microsoft",
+      "id": "1970393557038656",
+      "title": "Senior Security Researcher",
+      "location": "Hyderabad, TS, IN",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393557038656",
+      "published_at": "2026-10-13T10:38:57+00:00",
+      "topics": [],
+      "role_family": "research",
+      "topic_evidence": {},
+      "unit_hint": "Security Research",
+      "first_seen": "2026-10-13T21:22:43+00:00"
+    },
+    {
+      "company_id": "anthropic",
+      "id": "5440821008",
+      "title": "Applied AI Engineer, Beneficial Deployments (Lab Automation)",
+      "location": "London, UK",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5440821008",
+      "published_at": "2026-10-13T07:46:09-04:00",
+      "topics": [],
+      "role_family": "ai_engineering",
+      "topic_evidence": {},
+      "unit_hint": "",
+      "first_seen": "2026-10-13T21:22:43+00:00"
+    },
+    {
+      "company_id": "microsoft",
+      "id": "1970393557025048",
+      "title": "Principal Applied Scientist- M365 Copilot",
+      "location": "Redmond, WA, US; Mountain View, CA, US; New York, NY, US",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393557025048",
+      "published_at": "2026-10-12T18:55:52+00:00",
+      "topics": [],
+      "role_family": "research",
+      "topic_evidence": {},
+      "unit_hint": "Applied Sciences",
+      "first_seen": "2026-10-13T21:22:43+00:00"
+    },
+    {
+      "company_id": "microsoft",
+      "id": "1970393557027359",
+      "title": "Principal Researcher (AI)",
+      "location": "Beijing, Beijing, CN",
+      "url": "https://apply.careers.microsoft.com/careers/job/1970393557027359",
+      "published_at": "2026-10-11T16:00:00+00:00",
+      "topics": [],
+      "role_family": "research",
+      "topic_evidence": {},
+      "unit_hint": "Research Sciences",
+      "first_seen": "2026-10-13T21:22:43+00:00"
+    },
     {
       "company_id": "microsoft",
       "id": "1970393556994920",
@@ -1358,19 +1462,6 @@
       "location": "Washington, DC",
       "url": "https://jobs.ashbyhq.com/openai/485cda77-5d8f-4aaa-bca5-916b011477e6",
       "published_at": "2026-09-08T16:59:01.596+00:00",
-      "topics": [],
-      "role_family": "ai_engineering",
-      "topic_evidence": {},
-      "unit_hint": "",
-      "first_seen": "2026-09-24T18:14:20+00:00"
-    },
-    {
-      "company_id": "openai",
-      "id": "7be58f3a-6005-42ed-86fa-77773ebfb294",
-      "title": "Applied AI Engineer, Digital Natives",
-      "location": "London, UK",
-      "url": "https://jobs.ashbyhq.com/openai/7be58f3a-6005-42ed-86fa-77773ebfb294",
-      "published_at": "2026-09-08T08:10:32.624+00:00",
       "topics": [],
       "role_family": "ai_engineering",
       "topic_evidence": {},
@@ -2892,6 +2983,23 @@
     },
     {
       "company_id": "anthropic",
+      "id": "5150472008",
+      "title": "Staff Software Engineer, Inference",
+      "location": "Dublin, IE",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/5150472008",
+      "published_at": "2026-03-11T11:14:30-04:00",
+      "topics": [
+        "AI infrastructure"
+      ],
+      "role_family": "ai_infrastructure",
+      "topic_evidence": {
+        "AI infrastructure": "Inference"
+      },
+      "unit_hint": "",
+      "first_seen": "2026-09-24T18:14:22+00:00"
+    },
+    {
+      "company_id": "anthropic",
       "id": "5119713008",
       "title": "Research Engineer, Pretraining",
       "location": "London, UK",
@@ -3402,6 +3510,23 @@
       "first_seen": "2026-09-24T18:14:20+00:00"
     },
     {
+      "company_id": "anthropic",
+      "id": "4641822008",
+      "title": "Senior Software Engineer, Inference",
+      "location": "Dublin, IE",
+      "url": "https://job-boards.greenhouse.io/anthropic/jobs/4641822008",
+      "published_at": "2025-05-20T13:17:11-04:00",
+      "topics": [
+        "AI infrastructure"
+      ],
+      "role_family": "ai_infrastructure",
+      "topic_evidence": {
+        "AI infrastructure": "Inference"
+      },
+      "unit_hint": "",
+      "first_seen": "2026-10-13T21:22:43+00:00"
+    },
+    {
       "company_id": "openai",
       "id": "7e198d81-34e0-48b6-b64e-a501a75f9d53",
       "title": "Research Engineer/Research Scientist, RL/Reasoning",
@@ -3859,19 +3984,6 @@
     },
     {
       "company_id": "google",
-      "id": "87723107736789702",
-      "title": "AI Engineer, Advanced Solutions Lab, Google Cloud",
-      "location": "Chicago, IL, USA; Atlanta, GA, USA",
-      "url": "https://www.google.com/about/careers/applications/jobs/results/87723107736789702-ai-engineer-advanced-solutions-lab-google-cloud",
-      "published_at": null,
-      "topics": [],
-      "role_family": "ai_engineering",
-      "topic_evidence": {},
-      "unit_hint": "Google",
-      "first_seen": "2026-09-24T22:21:23+00:00"
-    },
-    {
-      "company_id": "google",
       "id": "83385434507223750",
       "title": "AI Outcome Customer Engineer II, Forward Deployed Engineering",
       "location": "New York, NY, USA; Atlanta, GA, USA",
@@ -4129,6 +4241,23 @@
       "topic_evidence": {},
       "unit_hint": "",
       "first_seen": "2026-09-29T20:48:20+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2027628",
+      "title": "Applied Research Intern, Robotics - 2027",
+      "location": "China, Shanghai",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/China-Shanghai/Applied-Research-Intern--Robotics---2027_JR2027628",
+      "published_at": null,
+      "topics": [
+        "Robotics"
+      ],
+      "role_family": "research",
+      "topic_evidence": {
+        "Robotics": "Robot"
+      },
+      "unit_hint": "",
+      "first_seen": "2026-10-13T21:15:57+00:00"
     },
     {
       "company_id": "nvidia",
@@ -4485,6 +4614,23 @@
     },
     {
       "company_id": "google",
+      "id": "73965804575433414",
+      "title": "Research Engineer, Chemical, Biological and Nuclear AI Safety, DeepMind",
+      "location": "Mountain View, CA, USA",
+      "url": "https://www.google.com/about/careers/applications/jobs/results/73965804575433414-research-engineer-chemical-biological-and-nuclear-ai-safety-deepmind",
+      "published_at": null,
+      "topics": [
+        "Safety"
+      ],
+      "role_family": "research_engineering",
+      "topic_evidence": {
+        "Safety": "Safety"
+      },
+      "unit_hint": "DeepMind",
+      "first_seen": "2026-10-13T21:16:03+00:00"
+    },
+    {
+      "company_id": "google",
       "id": "117070313253937862",
       "title": "Research Engineer, Cyber Gemini, DeepMind",
       "location": "New York, NY, USA; Mountain View, CA, USA",
@@ -4541,19 +4687,6 @@
     },
     {
       "company_id": "google",
-      "id": "75480114480980678",
-      "title": "Research Engineer, Gemini Omni, DeepMind",
-      "location": "London, UK; Zürich, Switzerland",
-      "url": "https://www.google.com/about/careers/applications/jobs/results/75480114480980678-research-engineer-gemini-omni-deepmind",
-      "published_at": null,
-      "topics": [],
-      "role_family": "research_engineering",
-      "topic_evidence": {},
-      "unit_hint": "DeepMind",
-      "first_seen": "2026-09-24T22:21:23+00:00"
-    },
-    {
-      "company_id": "google",
       "id": "97490121065931462",
       "title": "Research Engineer, GenAI,  Information Tasks, DeepMind",
       "location": "Cambridge, MA, USA",
@@ -4564,6 +4697,19 @@
       "topic_evidence": {},
       "unit_hint": "DeepMind",
       "first_seen": "2026-09-24T22:21:23+00:00"
+    },
+    {
+      "company_id": "google",
+      "id": "113430712870150854",
+      "title": "Research Engineer, Live Experiment Analysis",
+      "location": "Mountain View, CA, USA",
+      "url": "https://www.google.com/about/careers/applications/jobs/results/113430712870150854-research-engineer-live-experiment-analysis",
+      "published_at": null,
+      "topics": [],
+      "role_family": "research_engineering",
+      "topic_evidence": {},
+      "unit_hint": "Google",
+      "first_seen": "2026-10-13T21:16:03+00:00"
     },
     {
       "company_id": "google",
@@ -4702,23 +4848,6 @@
       "topic_evidence": {},
       "unit_hint": "",
       "first_seen": "2026-09-24T18:22:40+00:00"
-    },
-    {
-      "company_id": "google",
-      "id": "94574508286845638",
-      "title": "Research Scientist, AI Safety and Security",
-      "location": "Singapore",
-      "url": "https://www.google.com/about/careers/applications/jobs/results/94574508286845638-research-scientist-ai-safety-and-security",
-      "published_at": null,
-      "topics": [
-        "Safety"
-      ],
-      "role_family": "research",
-      "topic_evidence": {
-        "Safety": "Safety"
-      },
-      "unit_hint": "Google",
-      "first_seen": "2026-09-24T22:21:23+00:00"
     },
     {
       "company_id": "google",
@@ -5070,19 +5199,6 @@
       "first_seen": "2026-09-24T22:21:23+00:00"
     },
     {
-      "company_id": "nvidia",
-      "id": "JR2024900",
-      "title": "Research Scientist, Networking Research - PhD New College Grad 2026",
-      "location": "US, CA, Santa Clara",
-      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Research-Scientist--Networking-Research---PhD-New-College-Grad-2026_JR2024900-1",
-      "published_at": null,
-      "topics": [],
-      "role_family": "research",
-      "topic_evidence": {},
-      "unit_hint": "",
-      "first_seen": "2026-09-24T18:22:40+00:00"
-    },
-    {
       "company_id": "google",
       "id": "143570916452770502",
       "title": "Research Scientist, Neutral Atoms, Quantum AI",
@@ -5158,42 +5274,6 @@
       "role_family": "research",
       "topic_evidence": {},
       "unit_hint": "Google",
-      "first_seen": "2026-09-24T22:21:23+00:00"
-    },
-    {
-      "company_id": "google",
-      "id": "85260476568478406",
-      "title": "Research Scientist, Reasoning and Artificial General Intelligence, DeepMind",
-      "location": "Singapore",
-      "url": "https://www.google.com/about/careers/applications/jobs/results/85260476568478406-research-scientist-reasoning-and-artificial-general-intelligence-deepmind",
-      "published_at": null,
-      "topics": [
-        "Language models"
-      ],
-      "role_family": "research",
-      "topic_evidence": {
-        "Language models": "Reasoning"
-      },
-      "unit_hint": "DeepMind",
-      "first_seen": "2026-09-24T22:21:23+00:00"
-    },
-    {
-      "company_id": "google",
-      "id": "112514140005638854",
-      "title": "Research Scientist, Robotics Pre-Training and Data Quality, DeepMind",
-      "location": "London, UK",
-      "url": "https://www.google.com/about/careers/applications/jobs/results/112514140005638854-research-scientist-robotics-pretraining-and-data-quality-deepmind",
-      "published_at": null,
-      "topics": [
-        "Robotics",
-        "Language models"
-      ],
-      "role_family": "research",
-      "topic_evidence": {
-        "Robotics": "Robot",
-        "Language models": "Pre-Train"
-      },
-      "unit_hint": "DeepMind",
       "first_seen": "2026-09-24T22:21:23+00:00"
     },
     {
@@ -5336,6 +5416,19 @@
       },
       "unit_hint": "Google",
       "first_seen": "2026-10-07T21:19:08+00:00"
+    },
+    {
+      "company_id": "google",
+      "id": "104878573990355654",
+      "title": "Senior AI/ML Research Engineer, Cloud AI Research and AI Rapid Response",
+      "location": "Mountain View, CA, USA",
+      "url": "https://www.google.com/about/careers/applications/jobs/results/104878573990355654-senior-aiml-research-engineer-cloud-ai-research-and-ai-rapid-response",
+      "published_at": null,
+      "topics": [],
+      "role_family": "research_engineering",
+      "topic_evidence": {},
+      "unit_hint": "Google",
+      "first_seen": "2026-10-13T21:16:03+00:00"
     },
     {
       "company_id": "google",
@@ -5771,23 +5864,6 @@
     },
     {
       "company_id": "google",
-      "id": "130683844532544198",
-      "title": "Senior Research Scientist, AI Safety and Security",
-      "location": "Singapore",
-      "url": "https://www.google.com/about/careers/applications/jobs/results/130683844532544198-senior-research-scientist-ai-safety-and-security",
-      "published_at": null,
-      "topics": [
-        "Safety"
-      ],
-      "role_family": "research",
-      "topic_evidence": {
-        "Safety": "Safety"
-      },
-      "unit_hint": "Google",
-      "first_seen": "2026-09-24T22:21:23+00:00"
-    },
-    {
-      "company_id": "google",
       "id": "135090363940381382",
       "title": "Senior Research Scientist, AI's Impact on the Software Development Life Cycle",
       "location": "Kirkland, WA, USA; New York, NY, USA",
@@ -6023,6 +6099,19 @@
       "first_seen": "2026-10-09T20:55:29+00:00"
     },
     {
+      "company_id": "google",
+      "id": "81884075001815750",
+      "title": "Senior Software Engineer, Generative AI, Research",
+      "location": "Sunnyvale, CA, USA",
+      "url": "https://www.google.com/about/careers/applications/jobs/results/81884075001815750-senior-software-engineer-generative-ai-research",
+      "published_at": null,
+      "topics": [],
+      "role_family": "ai_engineering",
+      "topic_evidence": {},
+      "unit_hint": "Google",
+      "first_seen": "2026-10-13T21:16:03+00:00"
+    },
+    {
       "company_id": "nvidia",
       "id": "JR2005063",
       "title": "Senior Software Engineer, Humanoid Robotics",
@@ -6174,6 +6263,23 @@
     },
     {
       "company_id": "google",
+      "id": "138552354541576902",
+      "title": "Software Engineer, Multimodal AI, XR",
+      "location": "San Jose, CA, USA; New York, NY, USA",
+      "url": "https://www.google.com/about/careers/applications/jobs/results/138552354541576902-software-engineer-multimodal-ai-xr",
+      "published_at": null,
+      "topics": [
+        "Multimodal"
+      ],
+      "role_family": "ai_engineering",
+      "topic_evidence": {
+        "Multimodal": "Multimodal"
+      },
+      "unit_hint": "Google",
+      "first_seen": "2026-10-13T21:16:03+00:00"
+    },
+    {
+      "company_id": "google",
       "id": "93781738928382662",
       "title": "Software Engineering Manager, AI/ML, Google Home Conversational Experiences",
       "location": "Mountain View, CA, USA",
@@ -6256,6 +6362,19 @@
     },
     {
       "company_id": "google",
+      "id": "124707716441481926",
+      "title": "Staff Research Engineer",
+      "location": "Mountain View, CA, USA",
+      "url": "https://www.google.com/about/careers/applications/jobs/results/124707716441481926-staff-research-engineer",
+      "published_at": null,
+      "topics": [],
+      "role_family": "research_engineering",
+      "topic_evidence": {},
+      "unit_hint": "Google",
+      "first_seen": "2026-10-13T21:16:03+00:00"
+    },
+    {
+      "company_id": "google",
       "id": "80207760003605190",
       "title": "Staff Research Engineer, Applied AI, DeepMind",
       "location": "Mountain View, CA, USA",
@@ -6279,23 +6398,6 @@
       "topic_evidence": {},
       "unit_hint": "Google",
       "first_seen": "2026-10-09T20:55:29+00:00"
-    },
-    {
-      "company_id": "google",
-      "id": "137772095349105350",
-      "title": "Staff Research Scientist, AI Alignment",
-      "location": "Singapore",
-      "url": "https://www.google.com/about/careers/applications/jobs/results/137772095349105350-staff-research-scientist-ai-alignment",
-      "published_at": null,
-      "topics": [
-        "Safety"
-      ],
-      "role_family": "research",
-      "topic_evidence": {
-        "Safety": "Alignment"
-      },
-      "unit_hint": "Google",
-      "first_seen": "2026-09-24T22:21:23+00:00"
     },
     {
       "company_id": "google",
@@ -6545,6 +6647,188 @@
     }
   ],
   "events": [
+    {
+      "company_id": "microsoft",
+      "job_id": "1970393557025048",
+      "kind": "new",
+      "title": "Principal Applied Scientist- M365 Copilot",
+      "occurred_at": "2026-10-13T21:22:43+00:00"
+    },
+    {
+      "company_id": "microsoft",
+      "job_id": "1970393557027359",
+      "kind": "new",
+      "title": "Principal Researcher (AI)",
+      "occurred_at": "2026-10-13T21:22:43+00:00"
+    },
+    {
+      "company_id": "microsoft",
+      "job_id": "1970393557038656",
+      "kind": "new",
+      "title": "Senior Security Researcher",
+      "occurred_at": "2026-10-13T21:22:43+00:00"
+    },
+    {
+      "company_id": "anthropic",
+      "job_id": "5150472008",
+      "kind": "reopened",
+      "title": "Staff Software Engineer, Inference",
+      "occurred_at": "2026-10-13T21:22:43+00:00"
+    },
+    {
+      "company_id": "anthropic",
+      "job_id": "4641822008",
+      "kind": "new",
+      "title": "Senior Software Engineer, Inference",
+      "occurred_at": "2026-10-13T21:22:43+00:00"
+    },
+    {
+      "company_id": "anthropic",
+      "job_id": "5440821008",
+      "kind": "new",
+      "title": "Applied AI Engineer, Beneficial Deployments (Lab Automation)",
+      "occurred_at": "2026-10-13T21:22:43+00:00"
+    },
+    {
+      "company_id": "openai",
+      "job_id": "7be58f3a-6005-42ed-86fa-77773ebfb294",
+      "kind": "removed",
+      "title": "Applied AI Engineer, Digital Natives",
+      "occurred_at": "2026-10-13T21:22:42+00:00"
+    },
+    {
+      "company_id": "openai",
+      "job_id": "d039c0ef-ab36-4d40-bc5e-5c70295b2eb7",
+      "kind": "new",
+      "title": "Applied AI Engineer, Digital Natives",
+      "occurred_at": "2026-10-13T21:22:42+00:00"
+    },
+    {
+      "company_id": "openai",
+      "job_id": "70042d81-4db6-4c5c-bdb2-76c133ee2917",
+      "kind": "new",
+      "title": "Machine Learning Engineer, Growth",
+      "occurred_at": "2026-10-13T21:22:42+00:00"
+    },
+    {
+      "company_id": "openai",
+      "job_id": "a01fc9ed-de08-4326-9206-4ee3f08000dc",
+      "kind": "new",
+      "title": "Machine Learning Engineer, Implicit Signals",
+      "occurred_at": "2026-10-13T21:22:42+00:00"
+    },
+    {
+      "company_id": "msr",
+      "job_id": "1970393556982899",
+      "kind": "reopened",
+      "title": "Senior Researcher - AI Systems - Microsoft Research",
+      "occurred_at": "2026-10-13T21:22:41+00:00"
+    },
+    {
+      "company_id": "google",
+      "job_id": "94574508286845638",
+      "kind": "removed",
+      "title": "Research Scientist, AI Safety and Security",
+      "occurred_at": "2026-10-13T21:16:03+00:00"
+    },
+    {
+      "company_id": "google",
+      "job_id": "87723107736789702",
+      "kind": "removed",
+      "title": "AI Engineer, Advanced Solutions Lab, Google Cloud",
+      "occurred_at": "2026-10-13T21:16:03+00:00"
+    },
+    {
+      "company_id": "google",
+      "job_id": "85260476568478406",
+      "kind": "removed",
+      "title": "Research Scientist, Reasoning and Artificial General Intelligence, DeepMind",
+      "occurred_at": "2026-10-13T21:16:03+00:00"
+    },
+    {
+      "company_id": "google",
+      "job_id": "75480114480980678",
+      "kind": "removed",
+      "title": "Research Engineer, Gemini Omni, DeepMind",
+      "occurred_at": "2026-10-13T21:16:03+00:00"
+    },
+    {
+      "company_id": "google",
+      "job_id": "137772095349105350",
+      "kind": "removed",
+      "title": "Staff Research Scientist, AI Alignment",
+      "occurred_at": "2026-10-13T21:16:03+00:00"
+    },
+    {
+      "company_id": "google",
+      "job_id": "130683844532544198",
+      "kind": "removed",
+      "title": "Senior Research Scientist, AI Safety and Security",
+      "occurred_at": "2026-10-13T21:16:03+00:00"
+    },
+    {
+      "company_id": "google",
+      "job_id": "112514140005638854",
+      "kind": "removed",
+      "title": "Research Scientist, Robotics Pre-Training and Data Quality, DeepMind",
+      "occurred_at": "2026-10-13T21:16:03+00:00"
+    },
+    {
+      "company_id": "google",
+      "job_id": "124707716441481926",
+      "kind": "new",
+      "title": "Staff Research Engineer",
+      "occurred_at": "2026-10-13T21:16:03+00:00"
+    },
+    {
+      "company_id": "google",
+      "job_id": "73965804575433414",
+      "kind": "new",
+      "title": "Research Engineer, Chemical, Biological and Nuclear AI Safety, DeepMind",
+      "occurred_at": "2026-10-13T21:16:03+00:00"
+    },
+    {
+      "company_id": "google",
+      "job_id": "104878573990355654",
+      "kind": "new",
+      "title": "Senior AI/ML Research Engineer, Cloud AI Research and AI Rapid Response",
+      "occurred_at": "2026-10-13T21:16:03+00:00"
+    },
+    {
+      "company_id": "google",
+      "job_id": "113430712870150854",
+      "kind": "new",
+      "title": "Research Engineer, Live Experiment Analysis",
+      "occurred_at": "2026-10-13T21:16:03+00:00"
+    },
+    {
+      "company_id": "google",
+      "job_id": "138552354541576902",
+      "kind": "new",
+      "title": "Software Engineer, Multimodal AI, XR",
+      "occurred_at": "2026-10-13T21:16:03+00:00"
+    },
+    {
+      "company_id": "google",
+      "job_id": "81884075001815750",
+      "kind": "new",
+      "title": "Senior Software Engineer, Generative AI, Research",
+      "occurred_at": "2026-10-13T21:16:03+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "job_id": "JR2024900",
+      "kind": "removed",
+      "title": "Research Scientist, Networking Research - PhD New College Grad 2026",
+      "occurred_at": "2026-10-13T21:15:57+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "job_id": "JR2027628",
+      "kind": "new",
+      "title": "Applied Research Intern, Robotics - 2027",
+      "occurred_at": "2026-10-13T21:15:57+00:00"
+    },
     {
       "company_id": "google",
       "job_id": "76803287604437702",
@@ -8112,188 +8396,6 @@
       "kind": "new",
       "title": "Applied AI Engineer, Enterprise",
       "occurred_at": "2026-09-28T22:02:28+00:00"
-    },
-    {
-      "company_id": "anthropic",
-      "job_id": "5435282008",
-      "kind": "new",
-      "title": "Applied AI Engineer, DNB",
-      "occurred_at": "2026-09-28T22:02:28+00:00"
-    },
-    {
-      "company_id": "openai",
-      "job_id": "b073abb1-cf6c-4fd9-a318-732fdd2f1408",
-      "kind": "new",
-      "title": "Platform Engineering Manager, Forward Deployed Engineering (FDE)",
-      "occurred_at": "2026-09-28T22:02:27+00:00"
-    },
-    {
-      "company_id": "microsoft",
-      "job_id": "1970393556998632",
-      "kind": "new",
-      "title": "Senior Security Researcher - CTJ - Secret",
-      "occurred_at": "2026-09-28T22:02:26+00:00"
-    },
-    {
-      "company_id": "google",
-      "job_id": "94967548260295366",
-      "kind": "new",
-      "title": "Staff AI/ML Software Engineer, YouTube Ads Creative Foundations",
-      "occurred_at": "2026-09-28T22:02:23+00:00"
-    },
-    {
-      "company_id": "google",
-      "job_id": "117650954177651398",
-      "kind": "new",
-      "title": "Research Scientist/Engineer, Frontier Reasoning, DeepMind",
-      "occurred_at": "2026-09-28T22:02:23+00:00"
-    },
-    {
-      "company_id": "google",
-      "job_id": "119625608341660358",
-      "kind": "new",
-      "title": "Senior Staff Research Scientist/Engineer, Agentic Post Training, DeepMind",
-      "occurred_at": "2026-09-28T22:02:23+00:00"
-    },
-    {
-      "company_id": "google",
-      "job_id": "136766307423920838",
-      "kind": "new",
-      "title": "Research Scientist/Engineer, Autonomous Security, DeepMind",
-      "occurred_at": "2026-09-28T22:02:23+00:00"
-    },
-    {
-      "company_id": "nvidia",
-      "job_id": "JR2024968",
-      "kind": "new",
-      "title": "Senior Systems Software Engineer - Machine Learning",
-      "occurred_at": "2026-09-28T22:02:18+00:00"
-    },
-    {
-      "company_id": "microsoft",
-      "job_id": "1970393556999294",
-      "kind": "removed",
-      "title": "Senior Researcher",
-      "occurred_at": "2026-09-27T19:47:46+00:00"
-    },
-    {
-      "company_id": "microsoft",
-      "job_id": "1970393556991722",
-      "kind": "removed",
-      "title": "Principal Researcher",
-      "occurred_at": "2026-09-27T19:47:46+00:00"
-    },
-    {
-      "company_id": "microsoft",
-      "job_id": "1970393556985593",
-      "kind": "removed",
-      "title": "Security Researcher II",
-      "occurred_at": "2026-09-27T19:47:46+00:00"
-    },
-    {
-      "company_id": "microsoft",
-      "job_id": "1970393556985260",
-      "kind": "removed",
-      "title": "Senior Security Researcher",
-      "occurred_at": "2026-09-27T19:47:46+00:00"
-    },
-    {
-      "company_id": "anthropic",
-      "job_id": "5271380008",
-      "kind": "removed",
-      "title": "Research Engineer, Domain Scaling",
-      "occurred_at": "2026-09-26T19:13:40+00:00"
-    },
-    {
-      "company_id": "openai",
-      "job_id": "e1d8b590-8a91-42bb-ba2e-64b99c87e4ac",
-      "kind": "removed",
-      "title": "Applied AI Engineer, Codex",
-      "occurred_at": "2026-09-26T19:13:40+00:00"
-    },
-    {
-      "company_id": "microsoft",
-      "job_id": "1970393556985425",
-      "kind": "removed",
-      "title": "Applied AI Scientist II",
-      "occurred_at": "2026-09-26T19:13:39+00:00"
-    },
-    {
-      "company_id": "google",
-      "job_id": "136641397963793094",
-      "kind": "removed",
-      "title": "Audio to Audio Research Scientist, DeepMind",
-      "occurred_at": "2026-09-26T19:13:36+00:00"
-    },
-    {
-      "company_id": "google",
-      "job_id": "133517804614623942",
-      "kind": "removed",
-      "title": "Applied AI Engineer",
-      "occurred_at": "2026-09-26T19:13:36+00:00"
-    },
-    {
-      "company_id": "google",
-      "job_id": "133466467944276678",
-      "kind": "removed",
-      "title": "Research Scientist, Frontier AI, DeepMind",
-      "occurred_at": "2026-09-26T19:13:36+00:00"
-    },
-    {
-      "company_id": "google",
-      "job_id": "113097198995940038",
-      "kind": "removed",
-      "title": "Research Scientist",
-      "occurred_at": "2026-09-26T19:13:36+00:00"
-    },
-    {
-      "company_id": "google",
-      "job_id": "127510867649405638",
-      "kind": "new",
-      "title": "Semiconductor Material Science Research Scientist, DeepMind",
-      "occurred_at": "2026-09-26T19:13:36+00:00"
-    },
-    {
-      "company_id": "microsoft",
-      "job_id": "1970393557004677",
-      "kind": "changed",
-      "title": "Security Research Engineer",
-      "occurred_at": "2026-09-25T20:03:08+00:00"
-    },
-    {
-      "company_id": "microsoft",
-      "job_id": "1970393556941425",
-      "kind": "new",
-      "title": "Principal Security Researcher",
-      "occurred_at": "2026-09-25T20:03:08+00:00"
-    },
-    {
-      "company_id": "google",
-      "job_id": "111360003910050502",
-      "kind": "new",
-      "title": "Software Engineer III, AI/ML, Vertex Inference On Hybrid Clouds",
-      "occurred_at": "2026-09-25T20:01:59+00:00"
-    },
-    {
-      "company_id": "google",
-      "job_id": "120898404719960774",
-      "kind": "new",
-      "title": "Optimization Research Engineer, DeepMind",
-      "occurred_at": "2026-09-25T20:01:59+00:00"
-    },
-    {
-      "company_id": "google",
-      "job_id": "144035840220111558",
-      "kind": "new",
-      "title": "Software Engineer III, Cloud AI for Science, Full Stack",
-      "occurred_at": "2026-09-25T20:01:59+00:00"
-    },
-    {
-      "company_id": "google",
-      "job_id": "87441502837318342",
-      "kind": "new",
-      "title": "ML Research Scientist, Audio Algorithms",
-      "occurred_at": "2026-09-25T20:01:59+00:00"
     }
   ],
   "papers": [
@@ -8352,6 +8454,38 @@
       "url": "https://doi.org/10.48550/arxiv.2610.07588",
       "citations": 0,
       "first_seen": "2026-10-12T23:00:14+00:00"
+    },
+    {
+      "company_id": "google",
+      "title": "ASPIRE: Agentic Safety & Prompt Injection Red-teaming Engine",
+      "publication_date": "2026-10-06",
+      "url": "https://doi.org/10.48550/arxiv.2610.08951",
+      "citations": 0,
+      "first_seen": "2026-10-13T21:16:03+00:00"
+    },
+    {
+      "company_id": "google",
+      "title": "SpecGuard: Proving a Task Is Broken Before the Agent Cheats",
+      "publication_date": "2026-10-06",
+      "url": "https://doi.org/10.48550/arxiv.2610.09159",
+      "citations": 0,
+      "first_seen": "2026-10-13T21:16:03+00:00"
+    },
+    {
+      "company_id": "microsoft",
+      "title": "Training Language Models To Be Coherent Decision-Makers",
+      "publication_date": "2026-10-06",
+      "url": "https://doi.org/10.48550/arxiv.2610.09164",
+      "citations": 0,
+      "first_seen": "2026-10-13T21:18:16+00:00"
+    },
+    {
+      "company_id": "microsoft",
+      "title": "Anaximander: Interactively Running Geospatial Deep Learning Models on Any Compute Backend",
+      "publication_date": "2026-10-06",
+      "url": "https://doi.org/10.48550/arxiv.2610.09085",
+      "citations": 0,
+      "first_seen": "2026-10-13T21:18:16+00:00"
     },
     {
       "company_id": "amazon",
@@ -8432,6 +8566,22 @@
       "url": "https://doi.org/10.48550/arxiv.2610.07522",
       "citations": 0,
       "first_seen": "2026-10-12T23:01:33+00:00"
+    },
+    {
+      "company_id": "google",
+      "title": "RAISED: Self-Distillation for Robustness to Prompt Injection in LLM Agents",
+      "publication_date": "2026-10-05",
+      "url": "https://doi.org/10.48550/arxiv.2610.06401",
+      "citations": 0,
+      "first_seen": "2026-10-13T21:16:03+00:00"
+    },
+    {
+      "company_id": "amazon",
+      "title": "Rethinking Semantic ID Construction for Generative Recommendation: SimHash with Parallel Decoding and Semantic Alignment",
+      "publication_date": "2026-10-05",
+      "url": "https://doi.org/10.48550/arxiv.2610.07402",
+      "citations": 0,
+      "first_seen": "2026-10-13T21:16:03+00:00"
     },
     {
       "company_id": "amazon",
