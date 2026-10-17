@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T19:34:06+00:00",
+  "generated_at": "2026-10-17T18:31:55+00:00",
   "method": "Public ATS APIs and OpenAlex; titles use rule-based topic tags. OpenAlex papers are candidates pending affiliation review.",
   "companies": [
     {
@@ -17,15 +17,15 @@
           "machine learning"
         ]
       },
-      "relevant_jobs": 65,
+      "relevant_jobs": 66,
       "sources": {
         "jobs": {
           "company_id": "nvidia",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-10-16T19:33:53+00:00",
-          "last_success": "2026-10-16T19:33:53+00:00",
-          "item_count": 115,
+          "last_attempt": "2026-10-17T18:31:43+00:00",
+          "last_success": "2026-10-17T18:31:43+00:00",
+          "item_count": 116,
           "error": null,
           "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite"
         },
@@ -33,9 +33,9 @@
           "company_id": "nvidia",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-16T19:33:53+00:00",
-          "last_success": "2026-10-16T19:33:53+00:00",
-          "item_count": 7,
+          "last_attempt": "2026-10-17T18:31:44+00:00",
+          "last_success": "2026-10-17T18:31:44+00:00",
+          "item_count": 8,
           "error": null,
           "url": "https://openalex.org/"
         }
@@ -55,9 +55,9 @@
           "company_id": "meta",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-16T19:33:54+00:00",
-          "last_success": "2026-10-16T19:33:54+00:00",
-          "item_count": 6,
+          "last_attempt": "2026-10-17T18:31:44+00:00",
+          "last_success": "2026-10-17T18:31:44+00:00",
+          "item_count": 8,
           "error": null,
           "url": "https://openalex.org/"
         }
@@ -72,15 +72,15 @@
         "query": "research scientist",
         "scope": "targeted"
       },
-      "relevant_jobs": 136,
+      "relevant_jobs": 133,
       "sources": {
         "jobs": {
           "company_id": "google",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-10-16T19:34:00+00:00",
-          "last_success": "2026-10-16T19:34:00+00:00",
-          "item_count": 284,
+          "last_attempt": "2026-10-17T18:31:50+00:00",
+          "last_success": "2026-10-17T18:31:50+00:00",
+          "item_count": 281,
           "error": null,
           "url": "https://www.google.com/about/careers/applications/jobs/results/?q=research+scientist"
         },
@@ -88,9 +88,9 @@
           "company_id": "google",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-16T19:34:01+00:00",
-          "last_success": "2026-10-16T19:34:01+00:00",
-          "item_count": 12,
+          "last_attempt": "2026-10-17T18:31:51+00:00",
+          "last_success": "2026-10-17T18:31:51+00:00",
+          "item_count": 15,
           "error": null,
           "url": "https://openalex.org/"
         }
@@ -110,9 +110,9 @@
           "company_id": "amazon",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-16T19:34:01+00:00",
-          "last_success": "2026-10-16T19:34:01+00:00",
-          "item_count": 9,
+          "last_attempt": "2026-10-17T18:31:51+00:00",
+          "last_success": "2026-10-17T18:31:51+00:00",
+          "item_count": 7,
           "error": null,
           "url": "https://openalex.org/"
         }
@@ -134,9 +134,9 @@
           "company_id": "microsoft",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-10-16T19:34:04+00:00",
-          "last_success": "2026-10-16T19:34:04+00:00",
-          "item_count": 64,
+          "last_attempt": "2026-10-17T18:31:54+00:00",
+          "last_success": "2026-10-17T18:31:54+00:00",
+          "item_count": 65,
           "error": null,
           "url": "https://apply.careers.microsoft.com/careers?query=researcher"
         },
@@ -144,8 +144,8 @@
           "company_id": "microsoft",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-16T19:34:04+00:00",
-          "last_success": "2026-10-16T19:34:04+00:00",
+          "last_attempt": "2026-10-17T18:31:54+00:00",
+          "last_success": "2026-10-17T18:31:54+00:00",
           "item_count": 7,
           "error": null,
           "url": "https://openalex.org/"
@@ -168,8 +168,8 @@
           "company_id": "msr",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-10-16T19:34:04+00:00",
-          "last_success": "2026-10-16T19:34:04+00:00",
+          "last_attempt": "2026-10-17T18:31:54+00:00",
+          "last_success": "2026-10-17T18:31:54+00:00",
           "item_count": 5,
           "error": null,
           "url": "https://apply.careers.microsoft.com/careers?query=researcher"
@@ -178,9 +178,9 @@
           "company_id": "msr",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-16T19:34:05+00:00",
-          "last_success": "2026-10-16T19:34:05+00:00",
-          "item_count": 17,
+          "last_attempt": "2026-10-17T18:31:54+00:00",
+          "last_success": "2026-10-17T18:31:54+00:00",
+          "item_count": 21,
           "error": null,
           "url": "https://openalex.org/"
         }
@@ -200,9 +200,9 @@
           "company_id": "openai",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-10-16T19:34:05+00:00",
-          "last_success": "2026-10-16T19:34:05+00:00",
-          "item_count": 809,
+          "last_attempt": "2026-10-17T18:31:54+00:00",
+          "last_success": "2026-10-17T18:31:54+00:00",
+          "item_count": 814,
           "error": null,
           "url": "https://api.ashbyhq.com/posting-api/job-board/openai"
         },
@@ -210,8 +210,8 @@
           "company_id": "openai",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-16T19:34:05+00:00",
-          "last_success": "2026-10-16T19:34:05+00:00",
+          "last_attempt": "2026-10-17T18:31:54+00:00",
+          "last_success": "2026-10-17T18:31:54+00:00",
           "item_count": 0,
           "error": null,
           "url": "https://openalex.org/"
@@ -232,9 +232,9 @@
           "company_id": "anthropic",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-10-16T19:34:05+00:00",
-          "last_success": "2026-10-16T19:34:05+00:00",
-          "item_count": 653,
+          "last_attempt": "2026-10-17T18:31:55+00:00",
+          "last_success": "2026-10-17T18:31:55+00:00",
+          "item_count": 655,
           "error": null,
           "url": "https://boards-api.greenhouse.io/v1/boards/anthropic/jobs?content=true"
         },
@@ -242,8 +242,8 @@
           "company_id": "anthropic",
           "kind": "papers",
           "status": "ok",
-          "last_attempt": "2026-10-16T19:34:05+00:00",
-          "last_success": "2026-10-16T19:34:05+00:00",
+          "last_attempt": "2026-10-17T18:31:55+00:00",
+          "last_success": "2026-10-17T18:31:55+00:00",
           "item_count": 0,
           "error": null,
           "url": "https://openalex.org/"
@@ -264,8 +264,8 @@
           "company_id": "physical-intelligence",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-10-16T19:34:06+00:00",
-          "last_success": "2026-10-16T19:34:06+00:00",
+          "last_attempt": "2026-10-17T18:31:55+00:00",
+          "last_success": "2026-10-17T18:31:55+00:00",
           "item_count": 41,
           "error": null,
           "url": "https://api.ashbyhq.com/posting-api/job-board/physicalintelligence"
@@ -289,9 +289,9 @@
           "company_id": "skild-ai",
           "kind": "jobs",
           "status": "ok",
-          "last_attempt": "2026-10-16T19:34:06+00:00",
-          "last_success": "2026-10-16T19:34:06+00:00",
-          "item_count": 49,
+          "last_attempt": "2026-10-17T18:31:55+00:00",
+          "last_success": "2026-10-17T18:31:55+00:00",
+          "item_count": 50,
           "error": null,
           "url": "https://boards-api.greenhouse.io/v1/boards/skildai-careers/jobs?content=true"
         },
@@ -3308,7 +3308,7 @@
       "company_id": "anthropic",
       "id": "5057647008",
       "title": "Applied AI Engineer, Enterprise Tech",
-      "location": "San Francisco, CA | New York City, NY | Seattle, WA",
+      "location": "San Francisco, CA | New York City, NY",
       "url": "https://job-boards.greenhouse.io/anthropic/jobs/5057647008",
       "published_at": "2026-01-08T15:47:40-05:00",
       "topics": [],
@@ -4555,19 +4555,6 @@
     },
     {
       "company_id": "google",
-      "id": "131581769722798790",
-      "title": "Generative AI Forward Deployed Engineer, Google Cloud",
-      "location": "Mumbai, Maharashtra, India; Pune, Maharashtra, India",
-      "url": "https://www.google.com/about/careers/applications/jobs/results/131581769722798790-generative-ai-forward-deployed-engineer-google-cloud",
-      "published_at": null,
-      "topics": [],
-      "role_family": "ai_engineering",
-      "topic_evidence": {},
-      "unit_hint": "Google",
-      "first_seen": "2026-09-24T22:21:23+00:00"
-    },
-    {
-      "company_id": "google",
       "id": "87441502837318342",
       "title": "ML Research Scientist, Audio Algorithms",
       "location": "Irvine, CA, USA; Mountain View, CA, USA",
@@ -4616,6 +4603,19 @@
       },
       "unit_hint": "",
       "first_seen": "2026-10-07T21:19:03+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "id": "JR2027676",
+      "title": "Machine Learning Engineer, GeForce G-Assist",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Machine-Learning-Engineer--GeForce-G-Assist_JR2027676-1",
+      "published_at": null,
+      "topics": [],
+      "role_family": "ai_engineering",
+      "topic_evidence": {},
+      "unit_hint": "",
+      "first_seen": "2026-10-17T18:31:43+00:00"
     },
     {
       "company_id": "google",
@@ -5997,19 +5997,6 @@
       "first_seen": "2026-09-30T20:49:41+00:00"
     },
     {
-      "company_id": "google",
-      "id": "83101512472896198",
-      "title": "Senior Research Engineer, ML Lead, Health Frontiers",
-      "location": "London, UK",
-      "url": "https://www.google.com/about/careers/applications/jobs/results/83101512472896198-senior-research-engineer-ml-lead-health-frontiers",
-      "published_at": null,
-      "topics": [],
-      "role_family": "research_engineering",
-      "topic_evidence": {},
-      "unit_hint": "Google",
-      "first_seen": "2026-09-24T22:21:23+00:00"
-    },
-    {
       "company_id": "nvidia",
       "id": "JR2017450",
       "title": "Senior Research Engineer, Robotics Systems",
@@ -6068,19 +6055,6 @@
       },
       "unit_hint": "Google",
       "first_seen": "2026-10-16T19:34:00+00:00"
-    },
-    {
-      "company_id": "google",
-      "id": "135090363940381382",
-      "title": "Senior Research Scientist, AI's Impact on the Software Development Life Cycle",
-      "location": "Kirkland, WA, USA; New York, NY, USA",
-      "url": "https://www.google.com/about/careers/applications/jobs/results/135090363940381382-senior-research-scientist-ais-impact-on-the-software-development-life-cycle",
-      "published_at": null,
-      "topics": [],
-      "role_family": "research",
-      "topic_evidence": {},
-      "unit_hint": "Google",
-      "first_seen": "2026-09-24T22:21:23+00:00"
     },
     {
       "company_id": "google",
@@ -6241,6 +6215,23 @@
     },
     {
       "company_id": "nvidia",
+      "id": "JR2028164",
+      "title": "Senior Robotics Software Engineer",
+      "location": "US, CA, Santa Clara",
+      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Robotics-Software-Engineer_JR2028164",
+      "published_at": null,
+      "topics": [
+        "Robotics"
+      ],
+      "role_family": "ai_engineering",
+      "topic_evidence": {
+        "Robotics": "Robot"
+      },
+      "unit_hint": "",
+      "first_seen": "2026-10-17T18:31:43+00:00"
+    },
+    {
+      "company_id": "nvidia",
       "id": "JR2021411",
       "title": "Senior Software Engineer - Applied Research in Robotics",
       "location": "India, Bengaluru",
@@ -6253,19 +6244,6 @@
       "topic_evidence": {
         "Robotics": "Robot"
       },
-      "unit_hint": "",
-      "first_seen": "2026-09-24T18:22:40+00:00"
-    },
-    {
-      "company_id": "nvidia",
-      "id": "JR2022830",
-      "title": "Senior Software Engineer, CUDA Deep Learning Systems",
-      "location": "3 Locations",
-      "url": "https://nvidia.wd5.myworkdayjobs.com/en-US/NVIDIAExternalCareerSite/job/US-CA-Santa-Clara/Senior-Software-Engineer--CUDA-Deep-Learning-Systems_JR2022830",
-      "published_at": null,
-      "topics": [],
-      "role_family": "ai_engineering",
-      "topic_evidence": {},
       "unit_hint": "",
       "first_seen": "2026-09-24T18:22:40+00:00"
     },
@@ -6930,6 +6908,55 @@
     }
   ],
   "events": [
+    {
+      "company_id": "anthropic",
+      "job_id": "5057647008",
+      "kind": "changed",
+      "title": "Applied AI Engineer, Enterprise Tech",
+      "occurred_at": "2026-10-17T18:31:55+00:00"
+    },
+    {
+      "company_id": "google",
+      "job_id": "83101512472896198",
+      "kind": "removed",
+      "title": "Senior Research Engineer, ML Lead, Health Frontiers",
+      "occurred_at": "2026-10-17T18:31:50+00:00"
+    },
+    {
+      "company_id": "google",
+      "job_id": "135090363940381382",
+      "kind": "removed",
+      "title": "Senior Research Scientist, AI's Impact on the Software Development Life Cycle",
+      "occurred_at": "2026-10-17T18:31:50+00:00"
+    },
+    {
+      "company_id": "google",
+      "job_id": "131581769722798790",
+      "kind": "removed",
+      "title": "Generative AI Forward Deployed Engineer, Google Cloud",
+      "occurred_at": "2026-10-17T18:31:50+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "job_id": "JR2022830",
+      "kind": "removed",
+      "title": "Senior Software Engineer, CUDA Deep Learning Systems",
+      "occurred_at": "2026-10-17T18:31:43+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "job_id": "JR2027676",
+      "kind": "new",
+      "title": "Machine Learning Engineer, GeForce G-Assist",
+      "occurred_at": "2026-10-17T18:31:43+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "job_id": "JR2028164",
+      "kind": "new",
+      "title": "Senior Robotics Software Engineer",
+      "occurred_at": "2026-10-17T18:31:43+00:00"
+    },
     {
       "company_id": "anthropic",
       "job_id": "5454673008",
@@ -8630,55 +8657,6 @@
       "kind": "new",
       "title": "Staff Research Scientist, Android Pixel Audio",
       "occurred_at": "2026-10-01T21:02:33+00:00"
-    },
-    {
-      "company_id": "google",
-      "job_id": "140198319153390278",
-      "kind": "new",
-      "title": "Senior Research Scientist, Foundational Audio",
-      "occurred_at": "2026-10-01T21:02:33+00:00"
-    },
-    {
-      "company_id": "google",
-      "job_id": "82450594073060038",
-      "kind": "new",
-      "title": "Senior Research Scientist, Foundational AI in Health",
-      "occurred_at": "2026-10-01T21:02:33+00:00"
-    },
-    {
-      "company_id": "google",
-      "job_id": "138087256828060358",
-      "kind": "new",
-      "title": "Research Scientist, Optical Engineering Neutral Atoms, Quantum AI",
-      "occurred_at": "2026-10-01T21:02:33+00:00"
-    },
-    {
-      "company_id": "nvidia",
-      "job_id": "JR2025647",
-      "kind": "changed",
-      "title": "PhD Research Intern, Robotics - Summer 2027",
-      "occurred_at": "2026-10-01T21:02:27+00:00"
-    },
-    {
-      "company_id": "nvidia",
-      "job_id": "JR2026819",
-      "kind": "new",
-      "title": "System Software Engineer - Robotics Simulation",
-      "occurred_at": "2026-10-01T21:02:27+00:00"
-    },
-    {
-      "company_id": "openai",
-      "job_id": "ac4ad2fe-48a8-4329-9ba0-d37361ae6dde",
-      "kind": "removed",
-      "title": "Manager, Applied AI Engineering (Large Enterprise)",
-      "occurred_at": "2026-09-30T20:49:44+00:00"
-    },
-    {
-      "company_id": "openai",
-      "job_id": "e1d8b590-8a91-42bb-ba2e-64b99c87e4ac",
-      "kind": "reopened",
-      "title": "Applied AI Engineer, Codex",
-      "occurred_at": "2026-09-30T20:49:44+00:00"
     }
   ],
   "papers": [
@@ -8708,6 +8686,166 @@
     },
     {
       "company_id": "nvidia",
+      "title": "Graph Metanetworks for Transformer Based Language Models",
+      "publication_date": "2026-10-13",
+      "url": "https://doi.org/10.48550/arxiv.2610.18471",
+      "citations": 0,
+      "first_seen": "2026-10-17T18:31:44+00:00"
+    },
+    {
+      "company_id": "meta",
+      "title": "A CaLLM Judge is a Better Judge: Mitigating Bias in LLM-as-a-judge",
+      "publication_date": "2026-10-13",
+      "url": "https://doi.org/10.48550/arxiv.2610.18108",
+      "citations": 0,
+      "first_seen": "2026-10-17T18:31:44+00:00"
+    },
+    {
+      "company_id": "meta",
+      "title": "Delegating Earth science model calibration to knowledge-guided LLM agents",
+      "publication_date": "2026-10-13",
+      "url": "https://doi.org/10.48550/arxiv.2610.18378",
+      "citations": 0,
+      "first_seen": "2026-10-17T18:31:44+00:00"
+    },
+    {
+      "company_id": "amazon",
+      "title": "Beyond the Verdict: Agentic Code Judging with Verifiable Feedback",
+      "publication_date": "2026-10-13",
+      "url": "https://doi.org/10.48550/arxiv.2610.18760",
+      "citations": 0,
+      "first_seen": "2026-10-17T18:31:51+00:00"
+    },
+    {
+      "company_id": "amazon",
+      "title": "Searching for What Matters: Open-Ended Discovery of Multiple Hypotheses with Agentic Data Exploration",
+      "publication_date": "2026-10-13",
+      "url": "https://doi.org/10.48550/arxiv.2610.17874",
+      "citations": 0,
+      "first_seen": "2026-10-17T18:31:51+00:00"
+    },
+    {
+      "company_id": "microsoft",
+      "title": "LatentRemedy: Efficient Remedy For Non-Prefix KV Cache Reuse in Multi-Agent Systems",
+      "publication_date": "2026-10-13",
+      "url": "https://doi.org/10.48550/arxiv.2610.18014",
+      "citations": 0,
+      "first_seen": "2026-10-17T18:31:54+00:00"
+    },
+    {
+      "company_id": "msr",
+      "title": "APT: Feedback-Driven Agentic Post-Training for Text-to-Image Generation",
+      "publication_date": "2026-10-13",
+      "url": "https://doi.org/10.48550/arxiv.2610.18097",
+      "citations": 0,
+      "first_seen": "2026-10-17T18:31:54+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "title": "Double-Rollout Reinforcement Learning with Sampling-based Reward Estimation",
+      "publication_date": "2026-10-12",
+      "url": "https://doi.org/10.48550/arxiv.2610.16593",
+      "citations": 0,
+      "first_seen": "2026-10-17T18:31:44+00:00"
+    },
+    {
+      "company_id": "google",
+      "title": "AutoNovo: Agentic Program Search Discovers Transferable Nucleic Acid Design Algorithms",
+      "publication_date": "2026-10-12",
+      "url": "https://doi.org/10.48550/arxiv.2610.16232",
+      "citations": 0,
+      "first_seen": "2026-10-17T18:31:51+00:00"
+    },
+    {
+      "company_id": "google",
+      "title": "Learning to GUIDE the Group: Self-Learning LLM Facilitation Across Multi-Party Tasks",
+      "publication_date": "2026-10-12",
+      "url": "https://doi.org/10.48550/arxiv.2610.16231",
+      "citations": 0,
+      "first_seen": "2026-10-17T18:31:51+00:00"
+    },
+    {
+      "company_id": "google",
+      "title": "Growing to See: Efficient Pretraining of Self-Supervised Vision Transformers",
+      "publication_date": "2026-10-12",
+      "url": "https://doi.org/10.48550/arxiv.2610.16817",
+      "citations": 0,
+      "first_seen": "2026-10-17T18:31:51+00:00"
+    },
+    {
+      "company_id": "microsoft",
+      "title": "What Matters in Preference Post-Training of Continuous Autoregressive Speech Language Models",
+      "publication_date": "2026-10-12",
+      "url": "https://doi.org/10.48550/arxiv.2610.16276",
+      "citations": 0,
+      "first_seen": "2026-10-17T18:31:54+00:00"
+    },
+    {
+      "company_id": "microsoft",
+      "title": "Understanding and Reducing Misalignment in Persuasion Optimization",
+      "publication_date": "2026-10-12",
+      "url": "https://doi.org/10.48550/arxiv.2610.16070",
+      "citations": 0,
+      "first_seen": "2026-10-17T18:31:54+00:00"
+    },
+    {
+      "company_id": "microsoft",
+      "title": "GPU Goldmines: Tunable WebGPU Kernels for Edge LLM Inference",
+      "publication_date": "2026-10-12",
+      "url": "https://doi.org/10.48550/arxiv.2610.17321",
+      "citations": 0,
+      "first_seen": "2026-10-17T18:31:54+00:00"
+    },
+    {
+      "company_id": "google",
+      "title": "Google Earth AI Geospatial Reasoning Agent: Capabilities and a Systematic Evaluation",
+      "publication_date": "2026-10-11",
+      "url": "https://doi.org/10.48550/arxiv.2610.15750",
+      "citations": 0,
+      "first_seen": "2026-10-17T18:31:51+00:00"
+    },
+    {
+      "company_id": "google",
+      "title": "Harmony Harness: Multi-Objective Self-Evolution of Agent Harnesses",
+      "publication_date": "2026-10-10",
+      "url": "https://doi.org/10.48550/arxiv.2610.15150",
+      "citations": 0,
+      "first_seen": "2026-10-17T18:31:51+00:00"
+    },
+    {
+      "company_id": "msr",
+      "title": "EAIR: Interaction Risks in Enterprise LLM Multi-Agent Systems",
+      "publication_date": "2026-10-10",
+      "url": "https://doi.org/10.48550/arxiv.2610.14800",
+      "citations": 0,
+      "first_seen": "2026-10-17T18:31:54+00:00"
+    },
+    {
+      "company_id": "msr",
+      "title": "Self-Evolving Visual Agent via Margin Reward",
+      "publication_date": "2026-10-10",
+      "url": "https://doi.org/10.48550/arxiv.2610.15084",
+      "citations": 0,
+      "first_seen": "2026-10-17T18:31:54+00:00"
+    },
+    {
+      "company_id": "msr",
+      "title": "DEFT: Disentanglement-Enhanced Fine-Tuning for EEG Foundation Models",
+      "publication_date": "2026-10-10",
+      "url": "https://doi.org/10.48550/arxiv.2610.14497",
+      "citations": 0,
+      "first_seen": "2026-10-17T18:31:54+00:00"
+    },
+    {
+      "company_id": "msr",
+      "title": "LexiCan: Lexicographic Canonicalization of Point Clouds for Machine Learning Applications",
+      "publication_date": "2026-10-10",
+      "url": "https://doi.org/10.48550/arxiv.2610.15171",
+      "citations": 0,
+      "first_seen": "2026-10-17T18:31:54+00:00"
+    },
+    {
+      "company_id": "nvidia",
       "title": "Humanize MLE Agents: Multi-Agent Session Alternation Beyond Single-Agent Limits",
       "publication_date": "2026-10-09",
       "url": "https://doi.org/10.48550/arxiv.2610.13494",
@@ -8729,6 +8867,30 @@
       "url": "https://doi.org/10.48550/arxiv.2610.12998",
       "citations": 0,
       "first_seen": "2026-10-15T19:53:49+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "title": "ASSET: Adaptive Speech Segmentation via Reinforcement Learning",
+      "publication_date": "2026-10-09",
+      "url": "https://doi.org/10.48550/arxiv.2610.14309",
+      "citations": 0,
+      "first_seen": "2026-10-17T18:31:44+00:00"
+    },
+    {
+      "company_id": "nvidia",
+      "title": "Multimodal Co-Generation With Continuous Bitstream Diffusion",
+      "publication_date": "2026-10-09",
+      "url": "https://doi.org/10.48550/arxiv.2610.14349",
+      "citations": 0,
+      "first_seen": "2026-10-17T18:31:44+00:00"
+    },
+    {
+      "company_id": "amazon",
+      "title": "SPROUT: Scaling Agentic Reinforcement Learning for Long-Horizon Software Engineering",
+      "publication_date": "2026-10-09",
+      "url": "https://doi.org/10.48550/arxiv.2610.14405",
+      "citations": 0,
+      "first_seen": "2026-10-17T18:31:51+00:00"
     },
     {
       "company_id": "amazon",
